@@ -5,18 +5,20 @@
 
   angular
     .module('troveApp')
-    .config(appConfig)
+    .config(appConfig);
 
     appConfig.$inject = ['$routeProvider', '$locationProvider', '$httpProvider'];
 
-  function appConfig($routeProvider, $httpProvider) {
+  function appConfig($routeProvider, $locationProvider, $httpProvider) {
     $routeProvider
     .when('/', {
-      template: '<h1>Welcome to Trove!</h1>'
+      template: '<landing></landing>'
     })
+
     .otherwise({redirectTo: '/'});
+    $locationProvider.html5Mode(true);
   }
 
-  $locationProvider.html5Mode(true);
+
 
 })();
