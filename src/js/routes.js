@@ -14,6 +14,10 @@
     .when('/', {
       template: '<landing></landing>'
     })
+    
+    .when('/nearby', {
+      template: '<nearby></nearby>'
+    })
 
     .otherwise({redirectTo: '/'});
     $locationProvider.html5Mode(true);
