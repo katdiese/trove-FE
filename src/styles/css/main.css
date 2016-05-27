@@ -54,16 +54,16 @@
     text-align: center; }
 
 .all-markets li:nth-of-type(5n+1) .market-image {
-  background-image: url("https://unsplash.com//photos/JXqMjodZ0uM/download"); }
+  background-image: url("/images/market1.jpeg"); }
 
 .all-markets li:nth-of-type(5n+2) .market-image {
-  background-image: url("http://fds.ht/1Th37wu"); }
+  background-image: url("/images/market2.jpg"); }
 
 .all-markets li:nth-of-type(5n+3) .market-image {
-  background-image: url("http://goodstock.photos/wp-content/uploads/closeup-artichoke.jpg"); }
+  background-image: url("/images/market3.jpg"); }
 
 .all-markets li:nth-of-type(5n+4) .market-image {
-  background-image: url("http://bossfight.co/wp-content/uploads/2015/06/boss-fight-free-stock-images-photography-photos-high-resolution-fruit-vegetables-market.jpg"); }
+  background-image: url("/images/market4.jpg"); }
 
 .all-markets li:nth-of-type(5n+5) .market-image {
-  background-image: url("http://41.media.tumblr.com/0621577531673d1869a5dddfdbc2477b/tumblr_nmv8w3e8O91u60tx6o1_1280.jpg"); }
+  background-image: url("/images/market5.jpg"); }
