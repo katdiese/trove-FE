@@ -3,13 +3,13 @@
 
   angular
   .module('troveApp')
-  .directive('nearby', nearby);
+  .directive('landing', landing);
 
-function nearby() {
+function landing() {
   return {
     restrict: 'E',
-    templateUrl: 'js/components/nearby/nearby.view.html',
-    controller: 'NearbyCtrl',
+    templateUrl: 'components/landing/landing.view.html',
+    controller: 'LandingCtrl',
     controllerAs: 'vm',
     bindToController: true
   };
