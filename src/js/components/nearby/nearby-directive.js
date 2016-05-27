@@ -5,7 +5,7 @@
   .module('troveApp')
   .directive('nearby', nearby);
 
-function landing() {
+function nearby() {
   return {
     restrict: 'E',
     templateUrl: 'js/components/nearby/nearby.html',
