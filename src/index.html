@@ -4,13 +4,15 @@
     <meta charset="utf-8">
     <title>Trove!</title>
 
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
 
     <link rel="stylesheet" type="text/css" href="styles/css/main.css">
 
     <base href="/">
   </head>
-  <body ng-cloak>
+  <body>
 
     <div ng-view></div>
 
@@ -18,5 +20,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.10/angular-route.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/routes.js"></script>
+
+    <!-- Component Scripts 
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- Landing Component
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script type="text/javascript" src="js/components/landing/landing-directive.js"></script>
+    <script type="text/javascript" src="js/components/landing/landing-controller.js"></script>
+    <!-- Nearby Component
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script type="text/javascript" src="js/components/nearby/nearby-directive.js"></script>
+    <script type="text/javascript" src="js/components/nearby/nearby-controller.js"></script>
+    
+    <!-- Services 
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script type="text/javascript" src="js/services/location-services.js"></script>
   </body>
 </html>
