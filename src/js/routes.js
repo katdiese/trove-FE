@@ -5,18 +5,33 @@
 
   angular
     .module('troveApp')
-    .config(appConfig)
+    .config(appConfig);
 
-    appConfig.$inject = ['$routeProvider', '$locationProvider', '$httpProvider'];
+  appConfig.$inject = ['$routeProvider', '$locationProvider', '$httpProvider'];
 
-  function appConfig($routeProvider, $httpProvider) {
+  function appConfig($routeProvider, $locationProvider, $httpProvider) {
     $routeProvider
     .when('/', {
-      template: '<h1>Welcome to Trove!</h1>'
+      template: '<landing></landing>'
     })
-    .otherwise({redirectTo: '/'});
-  }
+    
+    .when('/nearby', {
+      template: '<nearby></nearby>'
+    })
 
-  $locationProvider.html5Mode(true);
+    .otherwise({redirectTo: '/'});
+    
+    $locationProvider.html5Mode(true);
+
+/* 
+ * Debugging CORS issues 
+ */  
+//     $httpProvider.defaults.useXDomain = true;
+//     $httpProvider.defaults.withCredentials = true;
+//     delete $httpProvider.defaults.headers.common["X-Requested-With"];
+//     $httpProvider.defaults.headers.common["Accept"] = "application/json";
+//     $httpProvider.defaults.headers.common["Content-Type"] = "application/json";
+
+  }
 
 })();

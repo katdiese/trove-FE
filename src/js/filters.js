@@ -7,7 +7,7 @@
 
   function thisFilter() {
     return function(input) {
-
-    }
+        return input.toUpperCase();
+    };
   }
 })();
