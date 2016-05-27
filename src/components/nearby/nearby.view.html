@@ -4,13 +4,14 @@
     <h1>Welcome to the Nearby Markets Page!</h1>
     <h4>Lat: {{lat}}</h4>
     <h4>Lng: {{lng}}</h4>
-    
-    <div ng-repeat="market in vm.nearbyMarkets">
-      <ul>
-        <li>{{ market.market_name }}</li>
+
+      <ul class="all-markets-list">
+        <li ng-repeat="market in vm.nearbyMarkets">
+            <div class="market-image"></div>
+            {{ market.market_name }}
+        </li>
       </ul>
-    </div>
-    
+
   </div>
 
 </div>
