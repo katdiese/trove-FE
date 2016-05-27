@@ -2,17 +2,17 @@ angular
   .module('troveApp')
   .controller('MarketInfoCtrl', MarketInfoCtrl);
 
-LandingCtrl.$inject = ['$timeout', '$window', '$rootScope', 'locationService'];
+MarketInfoCtrl.$inject = ['$timeout', '$window', '$rootScope', 'locationService'];
 
 function MarketInfoCtrl($timeout, $window, $rootScope, locationService) {
-
+console.log('market-info');
   var vm = this;
 
-  vm.getLocation = function () {
-    locationService.getLocation();
-  };
-
-  vm.getLocation();
+//   vm.getLocation = function () {
+//     locationService.getLocation();
+//   };
+// 
+//   vm.getLocation();
 
 
 }
