@@ -1,20 +1,51 @@
-.market-image {
-  height: 300px;
-  width: 500px;
-  background-size: cover;
-}
-li:nth-of-type(5n+1) .market-image {
-  background-image: url('https://unsplash.com//photos/JXqMjodZ0uM/download');
-}
-li:nth-of-type(5n+2) .market-image {
-  background-image: url('http://fds.ht/1Th37wu');
-}
-li:nth-of-type(5n+3) .market-image {
-  background-image: url('http://goodstock.photos/wp-content/uploads/closeup-artichoke.jpg');
-}
-li:nth-of-type(5n+4) .market-image {
-  background-image: url('http://bossfight.co/wp-content/uploads/2015/06/boss-fight-free-stock-images-photography-photos-high-resolution-fruit-vegetables-market.jpg');
-}
-li:nth-of-type(5n+5) .market-image {
-  background-image: url('http://41.media.tumblr.com/0621577531673d1869a5dddfdbc2477b/tumblr_nmv8w3e8O91u60tx6o1_1280.jpg');
+.all-markets {
+
+  li {
+    list-style: none;
+  }
+
+  .market-image {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    box-sizing: border-box;
+    border: 10px solid white;
+    display: flex;
+  }
+  .market-text {
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.7);
+
+    p {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+
+    button {
+      margin-top: 15px;
+      background-color: green;
+      color: white;
+    }
+    .go-button {
+      text-align: center;
+    }
+  }
+  li:nth-of-type(5n+1) .market-image {
+    background-image: url('https://unsplash.com//photos/JXqMjodZ0uM/download');
+  }
+  li:nth-of-type(5n+2) .market-image {
+    background-image: url('http://fds.ht/1Th37wu');
+  }
+  li:nth-of-type(5n+3) .market-image {
+    background-image: url('http://goodstock.photos/wp-content/uploads/closeup-artichoke.jpg');
+  }
+  li:nth-of-type(5n+4) .market-image {
+    background-image: url('http://bossfight.co/wp-content/uploads/2015/06/boss-fight-free-stock-images-photography-photos-high-resolution-fruit-vegetables-market.jpg');
+  }
+  li:nth-of-type(5n+5) .market-image {
+    background-image: url('http://41.media.tumblr.com/0621577531673d1869a5dddfdbc2477b/tumblr_nmv8w3e8O91u60tx6o1_1280.jpg');
+  }
+
 }

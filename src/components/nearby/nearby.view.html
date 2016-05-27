@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container all-markets">
 
   <div class="row">
     <h1>Welcome to the Nearby Markets Page!</h1>
@@ -7,8 +7,19 @@
 
       <ul class="all-markets-list">
         <li ng-repeat="market in vm.nearbyMarkets">
-            <div class="market-image"></div>
-            {{ market.market_name }}
+          <div class="six columns">
+            <div class="market-image">
+              <div class="market-text">
+                <p class="mkt-name">{{ market.market_name }}</p>
+                <p>{{ market.city }}, {{ market.state }}</p>
+                <p>Distance: {{ market.distance | number:1 }} miles</p>
+                <div class="go-button">
+                  <button>Go</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </li>
       </ul>
 
