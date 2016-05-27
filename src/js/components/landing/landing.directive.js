@@ -8,10 +8,10 @@
 function landing() {
   return {
     restrict: 'E',
-    templateUrl: 'js/components/landing/landing.html',
+    templateUrl: 'js/components/landing/landing.view.html',
     controller: 'LandingCtrl',
     controllerAs: 'vm',
-    bindToController: true  
+    bindToController: true
   };
 }
 })();

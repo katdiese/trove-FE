@@ -8,10 +8,10 @@
 function nearby() {
   return {
     restrict: 'E',
-    templateUrl: 'js/components/nearby/nearby.html',
+    templateUrl: 'js/components/nearby/nearby.view.html',
     controller: 'NearbyCtrl',
     controllerAs: 'vm',
-    bindToController: true  
+    bindToController: true
   };
 }
 })();
