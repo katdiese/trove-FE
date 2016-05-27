@@ -8,17 +8,19 @@ function NearbyCtrl($timeout, $window, $rootScope, locationService) {
   
   var vm = this;
   
-  vm.searchRadius = 10;
+  vm.nearbyMarkets;
   
+  vm.searchRadius = 10;
+    
   vm.findNearbyMarkets = function() {
     
     if (typeof($rootScope.lat) === "undefined") { locationService.getLocation() }
                         
-    locationService.findNearbyMarkets(39.7558119, -104.96809139999999, 10)
+    locationService.findNearbyMarkets($rootScope.lat, $rootScope.lng, vm.searchRadius)
     
-    .then( function (result) { console.log(result); })
+    .then( function (result) { vm.nearbyMarkets = result.data.nearbyMarkets; console.log(result); })
     
-    .catch( function (error) { console.log(error); return error; })
+    .catch( function (error) { return error; })
     
   }
   
