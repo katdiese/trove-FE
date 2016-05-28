@@ -14,8 +14,9 @@ function MarketInfoCtrl($timeout, $window, $rootScope, marketService) {
   console.log($rootScope.id);
 
   vm.getMarketInfo = function() {
-    marketService.getMarketInfo()
+    marketService.getMarketInfo($rootScope.id, $rootScope.fmid)
     .then( function (result) {
+      console.log(result);
       vm.currMkt = result;
       vm.currInfo = result.data.info[0];
       vm.currCategories = result.data.categories;
