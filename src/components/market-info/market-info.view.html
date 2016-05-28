@@ -1,7 +1,28 @@
-<div class="container">
-
-  <div class="row">
-    <h1>Welcome to the Market Info Page!</h1>
+<div class="four columns single-info">
+  <div class="single-mkt-name">
+    <p>{{ vm.currInfo.market_name }}</p>
+    <p>{{ vm.currInfo.city }}, {{ vm.currInfo.state }}</p>
+    <p>This was last updated: {{ vm.currInfo.dt_update }}</p>
   </div>
+  <div class="single-mkt-info">
+    <ul>
+      <li class="contact-title">Location</li>
+      <li ng-show="vm.currInfo.county">{{ vm.currInfo.county }} County</li>
+      <li ng-show="vm.currInfo.street">{{ vm.currInfo.street }}</li>
+      <li>{{ vm.currInfo.city }}, {{ vm.currInfo.state }} {{ vm.currInfo.zip }}</li>
+      <li ng-show="vm.currInfo.season_dt" class="contact-title">Season</li>
+      <li ng-show="vm.currInfo.season_dt" >{{ vm.currInfo.season_dt }}</li>
+      <li ng-show="vm.currInfo.season_time" class="contact-title">Schedule</li>
+      <li ng-show="vm.currInfo.season_time">{{ vm.currInfo.season_time }}</li>
+      <li class="contact-title">Social Media</li>
+      <li ng-show="vm.currInfo.website">Website: {{ vm.currInfo.website }}</li>
+      <li ng-show="vm.currInfo.facebook">Facebook: {{ vm.currInfo.facebook }}</li>
+      <li ng-show="vm.currInfo.twitter">Twitter: {{ vm.currInfo.twitter }}</li>
+      <li ng-show="vm.currInfo.youtube">Youtube: {{ vm.currInfo.youtube }}</li>
+    </ul>
+  </div>
+</div>
+<div class="eight columns single-conv">
 
 </div>
+
