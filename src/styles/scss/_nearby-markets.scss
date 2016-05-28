@@ -11,6 +11,7 @@
     box-sizing: border-box;
     border: 10px solid white;
     display: flex;
+    flex-direction: column;
   }
   .market-text {
     margin: auto;
@@ -23,13 +24,13 @@
       margin-bottom: 0;
     }
 
-    button {
-      margin-top: 15px;
-      background-color: green;
-      color: white;
-    }
     .go-button {
       text-align: center;
+      button {
+        margin-top: 15px;
+        background-color: green;
+        color: white;
+      }
     }
   }
   li:nth-of-type(5n+1) .market-image {
@@ -48,4 +49,36 @@
     background-image: url('/images/market5.jpg');
   }
 
+}
+
+@media(max-width: 700px) {
+  .go-button {
+    display: none;
+  }
+  .mobile-buttons {
+    display: show;
+    .buzz-button, .info-button {
+      width: 50%;
+      text-align: center;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+    .buzz-button {
+      background-color: green;
+      &:hover {
+        background-color: darken(green, 10%);
+        cursor: pointer;
+      }
+    }
+    .info-button {
+      float: right;
+      background-color: blue;
+      &:hover {
+        background-color: darken(blue, 10%);
+        cursor: pointer;
+      }
+    }
+  }
 }

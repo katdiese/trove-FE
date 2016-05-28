@@ -36,7 +36,8 @@
   background-size: cover;
   box-sizing: border-box;
   border: 10px solid white;
-  display: flex; }
+  display: flex;
+  flex-direction: column; }
 
 .all-markets .market-text {
   margin: auto;
@@ -46,12 +47,12 @@
     text-align: center;
     font-weight: bold;
     margin-bottom: 0; }
-  .all-markets .market-text button {
-    margin-top: 15px;
-    background-color: green;
-    color: white; }
   .all-markets .market-text .go-button {
     text-align: center; }
+    .all-markets .market-text .go-button button {
+      margin-top: 15px;
+      background-color: green;
+      color: white; }
 
 .all-markets li:nth-of-type(5n+1) .market-image {
   background-image: url("/images/market1.jpeg"); }
@@ -67,3 +68,26 @@
 
 .all-markets li:nth-of-type(5n+5) .market-image {
   background-image: url("/images/market5.jpg"); }
+
+@media (max-width: 700px) {
+  .go-button {
+    display: none; }
+  .mobile-buttons {
+    display: show; }
+    .mobile-buttons .buzz-button, .mobile-buttons .info-button {
+      width: 50%;
+      text-align: center; }
+      .mobile-buttons .buzz-button a, .mobile-buttons .info-button a {
+        color: white;
+        text-decoration: none; }
+    .mobile-buttons .buzz-button {
+      background-color: green; }
+      .mobile-buttons .buzz-button:hover {
+        background-color: #004d00;
+        cursor: pointer; }
+    .mobile-buttons .info-button {
+      float: right;
+      background-color: blue; }
+      .mobile-buttons .info-button:hover {
+        background-color: #0000cc;
+        cursor: pointer; } }
