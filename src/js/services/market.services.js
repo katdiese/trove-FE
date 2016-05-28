@@ -8,7 +8,7 @@ function marketService($http, $window, $rootScope) {
 
   return {
 
-    getMarketInfo: function(marketID) {
+    getMarketInfo: function(id, fmid) {
       return $http.get('https://trove-api.herokuapp.com/v1/markets/info?id=' + id + '&fmid=' + fmid + '');
     }
 
