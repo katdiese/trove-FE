@@ -104,3 +104,25 @@
   display: inline-block;
   text-decoration: none;
   padding: 10px 30px; }
+
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  margin: 0 0 100px; }
+
+.main-nav {
+  height: 60px;
+  background-color: #9EBF6D;
+  color: white;
+  margin-bottom: 75px; }
+
+.footer-nav {
+  position: absolute;
+  background-color: #696969;
+  color: white;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%; }

@@ -1,4 +1,35 @@
+$dark: #9EBF6D;
+$offset: #BBE2BC;
+$light: #BAD696;
+$highlight: #E4F1C3;
+$highlight2: #D8F1D3;
+$dark-grey: #696969;
+
 @import "home";
 @import "nearby-markets";
 @import "single-market";
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0 0 100px;
+}
+
+.main-nav {
+  height: 60px;
+  background-color: $dark;
+  color: white;
+  margin-bottom: 75px;
+}
+.footer-nav {
+  position: absolute;
+  background-color: $dark-grey;
+  color: white;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+}
