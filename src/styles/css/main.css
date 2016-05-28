@@ -30,6 +30,9 @@
 .all-markets li {
   list-style: none; }
 
+.all-markets .mobile-buttons {
+  visibility: hidden; }
+
 .all-markets .market-image {
   height: 300px;
   width: 100%;
@@ -72,22 +75,21 @@
 @media (max-width: 700px) {
   .go-button {
     display: none; }
-  .mobile-buttons {
-    display: show; }
-    .mobile-buttons .buzz-button, .mobile-buttons .info-button {
-      width: 50%;
-      text-align: center; }
-      .mobile-buttons .buzz-button a, .mobile-buttons .info-button a {
-        color: white;
-        text-decoration: none; }
-    .mobile-buttons .buzz-button {
-      background-color: green; }
-      .mobile-buttons .buzz-button:hover {
-        background-color: #004d00;
-        cursor: pointer; }
-    .mobile-buttons .info-button {
-      float: right;
-      background-color: blue; }
-      .mobile-buttons .info-button:hover {
-        background-color: #0000cc;
-        cursor: pointer; } }
+  .mobile-buttons .buzz-button, .mobile-buttons .info-button {
+    visibility: visible;
+    width: 50%;
+    text-align: center; }
+    .mobile-buttons .buzz-button a, .mobile-buttons .info-button a {
+      color: white;
+      text-decoration: none; }
+  .mobile-buttons .buzz-button {
+    background-color: green; }
+    .mobile-buttons .buzz-button:hover {
+      background-color: #004d00;
+      cursor: pointer; }
+  .mobile-buttons .info-button {
+    float: right;
+    background-color: blue; }
+    .mobile-buttons .info-button:hover {
+      background-color: #0000cc;
+      cursor: pointer; } }

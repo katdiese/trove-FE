@@ -3,6 +3,9 @@
   li {
     list-style: none;
   }
+  .mobile-buttons {
+    visibility: hidden;
+  }
 
   .market-image {
     height: 300px;
@@ -56,8 +59,8 @@
     display: none;
   }
   .mobile-buttons {
-    display: show;
     .buzz-button, .info-button {
+      visibility: visible;
       width: 50%;
       text-align: center;
       a {
