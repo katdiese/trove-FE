@@ -96,3 +96,6 @@
     .mobile-buttons .info-button:hover {
       background-color: #0000cc;
       cursor: pointer; } }
+
+.single-info, .single-conv {
+  border: 1px solid black; }
