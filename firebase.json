@@ -1,0 +1,9 @@
+{
+  "firebase": "trove-FE",
+  "public": "src",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
