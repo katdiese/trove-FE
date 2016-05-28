@@ -105,6 +105,11 @@
   text-decoration: none;
   padding: 10px 30px; }
 
+.mkt-messages {
+  height: 50vh;
+  border: 1px solid black;
+  overflow: scroll; }
+
 html {
   position: relative;
   min-height: 100%; }
