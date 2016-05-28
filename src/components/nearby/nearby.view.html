@@ -1,9 +1,9 @@
 <div class="container all-markets">
 
   <div class="row">
-    <h1>Welcome to the Nearby Markets Page!</h1>
-    <h4>Lat: {{lat}}</h4>
-    <h4>Lng: {{lng}}</h4>
+    <h1 class="near-header">Near You:</h1>
+<!--     <h4>Lat: {{lat}}</h4>
+    <h4>Lng: {{lng}}</h4> -->
 
       <ul class="all-markets-list">
         <li ng-repeat="market in vm.nearbyMarkets | orderBy: 'distance'">

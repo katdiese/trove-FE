@@ -33,6 +33,9 @@
 .all-markets .mobile-buttons {
   visibility: hidden; }
 
+.all-markets .near-header {
+  text-align: center; }
+
 .all-markets .market-image {
   height: 300px;
   width: 100%;
