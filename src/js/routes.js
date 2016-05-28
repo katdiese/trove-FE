@@ -18,6 +18,10 @@
     .when('/nearby', {
       template: '<nearby></nearby>'
     })
+    
+    .when('/info', {
+      template: '<market-info></market-info>'
+    })
 
     .otherwise({redirectTo: '/'});
     
