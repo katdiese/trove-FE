@@ -9,7 +9,7 @@ function MarketInfoCtrl($timeout, $window, $rootScope, marketService) {
 
   vm.currMkt;
   vm.currInfo;
-  vm.currMktCategories;
+  vm.currCategories;
 
   console.log($rootScope.id);
 
@@ -26,6 +26,12 @@ function MarketInfoCtrl($timeout, $window, $rootScope, marketService) {
       return error;
     });
   };
+
+  vm.hideCategories = true;
+
+  vm.toggleFilter = function() {
+    vm.hideCategories = !vm.hideCategories;
+  }
 
   vm.getMarketInfo();
 
