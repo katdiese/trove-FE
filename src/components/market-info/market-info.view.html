@@ -25,11 +25,38 @@
   </div>
   <div class="eight columns single-conv">
     <div ng-show="vm.currCategories[0]" class="single-mkt-categories">
-      <div ng-show="vm.hideCategories" ng-click="vm.toggleFilter()" class="filter-button">Filter Categories</div>
+      <div ng-show="vm.hideCategories" ng-click="vm.toggleFilter()" class="filter-button">Category Filters</div>
       <ul ng-show="!vm.hideCategories" class="curr-categories">
         <button ng-click="vm.toggleFilter()">x</button>
         <li ng-repeat="category in vm.currCategories | orderBy: 'category'"><input type="checkbox"> {{ category.category }}</li>
       </ul>
+    </div>
+    <div class="mkt-messages">
+      <h1>Messages will live here.</h1>
+    </div>
+    <div class="new-message">
+      <h3>New message</h3>
+      <form method="POST" action="/newmessagepath">
+        <div class="row">
+          <label for="name">Your Name</label>
+          <input required type="text" id="name" ng-model="message.name" class="six columns">
+        </div>
+        <div ng-show="vm.currCategories[0]" class="row">
+          <label for="category">Message Category</label>
+          <select required id="category" ng-model="message.category" class="six columns">
+            <option ng-repeat="category in vm.currCategories | orderBy: 'category'" value="{{ category.category }}">{{ category.category }}</option>
+          </select>
+        </div>
+        <div class="row">
+          <label for="image">Image</label>
+          <input type="file" id="image" ng-model="message.image" accept="image/*">
+        </div>
+        <div class="row">
+          <label for="message">Message</label>
+          <textarea id="message" ng-model="message.message" class="u-full-width"></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </form>
     </div>
   </div>
 </div>
