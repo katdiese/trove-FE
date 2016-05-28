@@ -1,3 +1,10 @@
 .single-info, .single-conv {
   border: 1px solid black;
 }
+.curr-categories {
+  li {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 30px;
+  }
+}

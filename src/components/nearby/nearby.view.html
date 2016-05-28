@@ -14,7 +14,7 @@
                 <p>{{ market.city }}, {{ market.state }}</p>
                 <p>Distance: {{ market.distance | number:1 }} miles</p>
                 <div class="go-button">
-                  <a href="/#/info"><button>Go</button></a>
+                  <a href="/#/info" ng-click="vm.setId(market.id, market.fmid)"><button>Go</button></a>
                 </div>
               </div>
               <div class="row">
