@@ -44,9 +44,27 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script type="text/javascript" src="components/nearby/nearby.directive.js"></script>
     <script type="text/javascript" src="components/nearby/nearby.controller.js"></script>
+    <!-- Market Info Component
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script type="text/javascript" src="components/market-info/market-info.directive.js"></script>
+    <script type="text/javascript" src="components/market-info/market-info.controller.js"></script>
 
     <!-- Services
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script type="text/javascript" src="js/services/location.services.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    
+    <!-- Firebase
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDKzYgtM-A3cLubzyKjOXXsGFjshJaUASw",
+        authDomain: "trove-ed42c.firebaseapp.com",
+        databaseURL: "https://trove-ed42c.firebaseio.com",
+        storageBucket: "",
+      };
+      firebase.initializeApp(config);
+    </script>
   </body>
 </html>
