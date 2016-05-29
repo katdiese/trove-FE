@@ -10,13 +10,11 @@ function MarketInfoCtrl($timeout, $window, $rootScope, marketService) {
   vm.currMkt;
   vm.currInfo;
   vm.currCategories;
-
-  console.log($rootScope.id);
+  vm.currMsg;
 
   vm.getMarketInfo = function() {
     marketService.getMarketInfo($rootScope.id, $rootScope.fmid)
     .then( function (result) {
-      console.log(result);
       vm.currMkt = result;
       vm.currInfo = result.data.info[0];
       vm.currCategories = result.data.categories;
@@ -27,6 +25,14 @@ function MarketInfoCtrl($timeout, $window, $rootScope, marketService) {
     });
   };
 
+  vm.getMarketMessages = function() {
+    marketService.getMarketMessages($rootScope.id)
+    .then( function(result) {
+      vm.currMsg = result.data.data;
+      console.log('all messages', vm.currMsg);
+    } )
+  }
+
   vm.hideCategories = true;
 
   vm.toggleFilter = function() {
@@ -34,6 +40,7 @@ function MarketInfoCtrl($timeout, $window, $rootScope, marketService) {
   }
 
   vm.getMarketInfo();
+  vm.getMarketMessages();
 
 
 }
