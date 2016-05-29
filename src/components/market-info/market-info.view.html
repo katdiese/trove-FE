@@ -34,7 +34,11 @@
       </ul>
     </div>
     <div class="mkt-messages">
-      <h1>Messages will live here.</h1>
+      <ul>
+        <li ng-repeat="message in vm.currMsg | orderBy: dt">
+          <p ng-class="{'vendor-message':message.vendor=true}">{{ message.msg }}</p>
+        </li>
+      </ul>
     </div>
     <div class="new-message">
       <h3>New message</h3>
