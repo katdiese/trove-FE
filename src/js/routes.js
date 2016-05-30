@@ -1,7 +1,6 @@
 (function() {
 
   'use strict';
-  console.log('main page');
 
   angular
     .module('troveApp')
