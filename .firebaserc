@@ -1,6 +1,7 @@
 {
   "projects": {
     "default": "trove-ed42c",
-    "deployed": "trove-ed42c"
+    "deployed": "trove-ed42c",
+    "trove": "trove-ed42c"
   }
 }
