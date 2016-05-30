@@ -23,7 +23,7 @@ function NearbyCtrl($timeout, $window, $rootScope, locationService) {
 
     locationService.findNearbyMarkets($rootScope.lat, $rootScope.lng, vm.searchRadius)
 
-    .then( function (result) { vm.nearbyMarkets = result.data.nearbyMarkets; console.log(result); })
+    .then( function (result) { vm.nearbyMarkets = result.data.nearbyMarkets; })
 
     .catch( function (error) { return error; })
 
@@ -31,9 +31,10 @@ function NearbyCtrl($timeout, $window, $rootScope, locationService) {
 
   vm.findMarketsByZip = function() {
     var zip = locationService.searchZip;
+    
     locationService.findMarketsByZip(zip)
 
-    .then( function (result) { vm.nearbyMarkets = result.data.nearbyMarkets; console.log(result); })
+    .then( function (result) { vm.nearbyMarkets = result.data.nearbyMarkets; })
 
     .catch( function (error) { return error; })
   }
