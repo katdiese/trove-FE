@@ -1,0 +1,40 @@
+  <div class="single-conv">
+    <div class="single-mkt-categories">
+      <div ng-show="vm.hideCategories" ng-click="vm.toggleFilter()" class="filter-button">Category Filters</div>
+      <ul ng-show="!vm.hideCategories" class="curr-categories">
+        <button ng-click="vm.toggleFilter()">x</button>
+        <li><input type="checkbox"> Clear All</li>
+        <li><input type="checkbox"> Vendor Messages</li>
+        <li ng-repeat="category in vm.currCategories | orderBy: 'category'"><input type="checkbox"> {{ category.category }}</li>
+      </ul>
+    </div>
+    <div class="mkt-messages">
+      <ul>
+        <li ng-repeat="message in vm.currMsg | orderBy: dt">
+          <p ng-class="{'vendor-message':message.vendor=true}">{{ message.msg }}</p>
+        </li>
+      </ul>
+    </div>
+    <div class="new-message">
+      <h3>New message</h3>
+      <form ng-submit="vm.postMessage()">
+        <div ng-show="vm.currCategories[0]" class="row">
+          <label for="category">Message Category</label>
+          <select required id="category" ng-model="message.category_id" class="six columns">
+            <option ng-repeat="category in vm.currCategories | orderBy: 'category'" value="{{ category.category_id }}">{{ category.category }}</option>
+          </select>
+        </div>
+        <div class="row">
+          <label for="image">Image</label>
+          <input type="file" id="image" ng-model="message.img" accept="image/*">
+        </div>
+        <div class="row">
+          <label for="message">Message</label>
+          <textarea id="message" ng-model="message.msg" class="u-full-width"></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+
