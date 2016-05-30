@@ -21,7 +21,6 @@ function MarketInfoCtrl($timeout, $window, $rootScope, marketService) {
       vm.currInfo = result.data.info[0];
       vm.currCategories = result.data.categories;
       marketService.categories = vm.currCategories;
-      console.log('first assignment of cats ', marketService.categories);
       return result;
     })
     .catch( function (error) {

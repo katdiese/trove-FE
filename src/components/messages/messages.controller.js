@@ -28,9 +28,9 @@ function MessagesCtrl($timeout, $window, $rootScope, marketService) {
     
     marketService.postMessage($rootScope.id, vm.message)
     
-    .then( function (result) { console.log('result', result); })
+    .then( function (result) { return result; })
     
-    .catch( function (error) { console.log('error', error);return error; })
+    .catch( function (error) { return error; })
     
   }
 
