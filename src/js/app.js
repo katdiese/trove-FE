@@ -2,6 +2,6 @@
 
   'use strict';
 
-  angular.module('troveApp', ['ngRoute', 'datamaps']);
+  angular.module('troveApp', ['ngRoute']);
 
 })();
