@@ -29,6 +29,23 @@ function NearbyCtrl($timeout, $window, $rootScope, locationService) {
 
   }
 
-  vm.findNearbyMarkets();
+  vm.findMarketsByZip = function() {
+    var zip = locationService.searchZip;
+    locationService.findMarketsByZip(zip)
+
+    .then( function (result) { vm.nearbyMarkets = result.data.nearbyMarkets; console.log(result); })
+
+    .catch( function (error) { return error; })
+  }
+
+  vm.search = function() {
+    if(locationService.searchZip.length > 0) {
+      vm.findMarketsByZip();
+    } else {
+      vm.findNearbyMarkets();
+    }
+  }
+
+  vm.search();
 
 }
