@@ -2,10 +2,14 @@
 
   <div class="row">
     <h1>Welcome to the Landing Page!</h1>
-    <h4>Lat: {{lat}}</h4>
-    <h4>Lng: {{lng}}</h4>
 
-    <a href="/#/nearby"><h1>Go to the Nearby Markets page!</h1></a>
+    <button ng-click="vm.clearZip()">Closest to where you are right now</button>
+    <form>
+      <h3>Find By Zipcode</h3>
+      <input ng-model="vm.zip" type="text">
+      <button ng-click ="vm.assignSearchZip()" type="submit">Search</button>
+    </form>
+    <p>Zip: {{ vm.zip }}</p>
   </div>
 
 </div>
