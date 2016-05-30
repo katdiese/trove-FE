@@ -14,11 +14,14 @@ function MarketInfoCtrl($timeout, $window, $rootScope, marketService) {
   vm.hideCategories = true;
 
   vm.getMarketInfo = function() {
+
     marketService.getMarketInfo($rootScope.id, $rootScope.fmid)
     .then( function (result) {
       vm.currMkt = result;
       vm.currInfo = result.data.info[0];
       vm.currCategories = result.data.categories;
+      marketService.categories = vm.currCategories;
+      console.log('first assignment of cats ', marketService.categories);
       return result;
     })
     .catch( function (error) {
