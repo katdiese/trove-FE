@@ -7,6 +7,7 @@
 
 function messages() {
   return {
+    scope: true,
     restrict: 'E',
     templateUrl: 'components/messages/messages.view.html',
     controller: 'MessagesCtrl',
