@@ -28,7 +28,10 @@
   SocketService.$inject = ['socketFactory'];
   
   function SocketService (socketFactory) {
-    return socketFactory();
+    
+    var myIoSocket = io.connect('http://trove-api.herokuapp.com/');
+    
+    return socketFactory({ioSocket: myIoSocket});
   }
 
 })();

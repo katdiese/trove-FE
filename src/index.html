@@ -7,36 +7,35 @@
     <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
-
     <link rel="stylesheet" type="text/css" href="styles/css/main.css">
-
     <link rel="stylesheet" type="text/css" href="styles/css/skeleton.css">
 
 <!--     <base href="/"> -->
   </head>
   <body>
 
-    <a href="/#/"><nav class="main-nav">
-<!--         <a href="#">Hi</a> -->
-    </nav></a>
+    <a href="/#/">
+      <nav class="main-nav">
+      </nav>
+    </a>
 
     <div ng-view></div>
 
     <nav class="footer-nav">
-        <a href="#">Vendor Login</a>
+      <a href="#">Vendor Login</a>
     </nav>
 
     
      <!-- Angular
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<!--     <script src="//code.jquery.com/jquery-2.1.4.min.js"></script> -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.10/angular.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.10/angular-route.min.js" ></script>
     
     <!-- Socket.io
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script type="text/javascript" src="js/btford-socket.min.js"></script>
-    <script src="js/socket.io.js"></script>
+    <script src="http://trove-api.herokuapp.com/socket.io/socket.io.js"></script>
     
     
     <!-- General Angular Scripts
@@ -45,8 +44,6 @@
     <script type="text/javascript" src="js/routes.js"></script>
     
     
-
-
     <!-- Component Scripts
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <!-- Landing Component
@@ -66,11 +63,13 @@
       <script type="text/javascript" src="components/messages/messages.directive.js"></script>
       <script type="text/javascript" src="components/messages/messages.controller.js"></script>
 
+
     <!-- Services
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script type="text/javascript" src="js/services/location.services.js"></script>
     <script type="text/javascript" src="js/services/messages.services.js"></script>
     <script type="text/javascript" src="js/services/market.services.js"></script>
+
 
     <!-- D3.js && topojson
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
