@@ -35,9 +35,7 @@ function MessagesCtrl($timeout, $window, $rootScope, $scope, messageService, Soc
   vm.postMessage = function() {
     // Add the market id to the message object
     vm.message.market_id = $rootScope.id;
-    
-    console.log('pre-post ', vm.message);
-    
+        
     // Use the message service to make the API call
     messageService.postMessage($rootScope.id, vm.message)
     
@@ -51,7 +49,7 @@ function MessagesCtrl($timeout, $window, $rootScope, $scope, messageService, Soc
   // Sockets!
   SocketService.forward('message.new', $scope);
     $scope.$on('socket:message.new', function (ev, result) {
-      console.log(result);
+      if (result === $rootScope.id) { vm.getMarketMessages(); }
     });
 
   
