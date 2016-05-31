@@ -29,7 +29,7 @@
   
   function SocketService (socketFactory) {
     
-    var myIoSocket = io.connect('http://trove-api.herokuapp.com/');
+    var myIoSocket = io.connect('https://trove-api.herokuapp.com/');
     
     return socketFactory({ioSocket: myIoSocket});
   }
