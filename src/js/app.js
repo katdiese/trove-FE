@@ -2,6 +2,8 @@
 
   'use strict';
 
-  angular.module('troveApp', ['ngRoute']);
+  angular.module('troveApp', ['ngRoute', 
+  'btford.socket-io'
+  ]);
 
 })();

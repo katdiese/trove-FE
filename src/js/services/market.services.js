@@ -16,7 +16,7 @@ function marketService($http, $window, $rootScope) {
       return $http.get('https://trove-api.herokuapp.com/v1/messages?id=' + id + '');
     },
 
-    sendMarketMessage: function(id,payload) {
+    postMessage: function(id, payload) {
       return $http.post('https://trove-api.herokuapp.com/v1/messages?id=' + id + '', payload);
     }
   }

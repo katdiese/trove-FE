@@ -10,7 +10,7 @@
     </div>
     <div class="mkt-messages">
       <ul>
-        <li ng-repeat="message in vm.currMsg | orderBy: dt">
+        <li ng-repeat="message in vm.currMsgs | orderBy: dt">
           <p ng-class="{'vendor-message':message.vendor=true}">{{ message.msg }}</p>
         </li>
       </ul>
@@ -20,17 +20,17 @@
       <form ng-submit="vm.postMessage()">
         <div ng-show="vm.currCategories[0]" class="row">
           <label for="category">Message Category</label>
-          <select required id="category" ng-model="message.category_id" class="six columns">
+          <select required id="category" ng-model="vm.message.category_id" class="six columns">
             <option ng-repeat="category in vm.currCategories | orderBy: 'category'" value="{{ category.category_id }}">{{ category.category }}</option>
           </select>
         </div>
         <div class="row">
           <label for="image">Image</label>
-          <input type="file" id="image" ng-model="message.img" accept="image/*">
+          <input type="file" id="image" ng-model="vm.message.img" accept="image/*">
         </div>
         <div class="row">
           <label for="message">Message</label>
-          <textarea id="message" ng-model="message.msg" class="u-full-width"></textarea>
+          <textarea id="message" ng-model="vm.message.msg" class="u-full-width"></textarea>
         </div>
         <button type="submit">Send</button>
       </form>

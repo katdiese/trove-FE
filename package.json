@@ -1,9 +1,9 @@
 {
-  "name": "update-me",
-  "version": "0.0.0",
+  "name": "Trove",
+  "version": "0.0.1",
   "description": "",
   "main": "gulpfile.js",
-  "author": "",
+  "author": "Kathy & Dennis the Intern",
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.0",
@@ -17,6 +17,7 @@
     "run-sequence": "^1.1.4"
   },
   "dependencies": {
+    "angular-socket-io": "^0.7.0",
     "socket.io": "^1.4.6"
   }
 }
