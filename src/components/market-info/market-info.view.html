@@ -3,7 +3,7 @@
     <div class="single-mkt-name">
       <p>{{ vm.currInfo.market_name }}</p>
       <p>{{ vm.currInfo.city }}, {{ vm.currInfo.state }}</p>
-      <p>This was last updated: {{ vm.currInfo.dt_update }}</p>
+      <p ng-show="vm.currInfo.dt_update">This was last updated: {{ vm.currInfo.dt_update }}</p>
     </div>
     <div class="single-mkt-info">
       <ul>
