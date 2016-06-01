@@ -13,17 +13,21 @@
     .when('/', {
       template: '<landing></landing>'
     })
-    
+
     .when('/nearby', {
       template: '<nearby></nearby>'
     })
-    
+
     .when('/info', {
       template: '<market-info></market-info>'
     })
 
+    .when('/upload-test', {
+      template: '<upload-test></upload-test>'
+    })
+
     .otherwise({redirectTo: '/'});
-    
+
 //     $locationProvider.html5Mode(true);
 
   }

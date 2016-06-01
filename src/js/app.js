@@ -2,8 +2,10 @@
 
   'use strict';
 
-  angular.module('troveApp', ['ngRoute', 
-  'btford.socket-io'
+  angular.module('troveApp', [
+    'ngRoute',
+    'btford.socket-io',
+    'ngFileUpload'
   ]);
 
 })();
