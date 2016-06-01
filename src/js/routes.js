@@ -22,8 +22,8 @@
       template: '<market-info></market-info>'
     })
 
-    .when('/upload-test', {
-      template: '<upload-test></upload-test>'
+    .when('/upload', {
+      template: '<upload></upload>'
     })
 
     .otherwise({redirectTo: '/'});
