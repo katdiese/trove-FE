@@ -14,6 +14,9 @@ function MessagesCtrl($timeout, $window, $rootScope, $scope, messageService, Soc
   
   // Default value for hide categories.
   vm.hideCategories = true;
+  vm.postTypeButtons = true;
+  vm.postForm = false;
+  vm.imageForm = false;
 
   // Function to get Messages for this market
   vm.getMarketMessages = function() {
@@ -56,6 +59,24 @@ function MessagesCtrl($timeout, $window, $rootScope, $scope, messageService, Soc
   // Function to change the boolean value for hideCaegories
   vm.toggleFilter = function() {
     vm.hideCategories = !vm.hideCategories;
+  }
+  
+  vm.showButtons = function() {
+    vm.postTypeButtons = true;
+    vm.postForm = false;
+    vm.imageForm = false;   
+  }
+  
+  vm.hideButtons = function() {
+    vm.postTypeButtons = false;   
+  }
+  
+  vm.showPostForm = function() {
+    vm.postForm = true;   
+  }
+  
+  vm.showImageForm = function() {
+    vm.imageForm = true;   
   }
 
   // Invoke the function that gets the messages on page load
