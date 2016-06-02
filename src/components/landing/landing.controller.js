@@ -9,6 +9,7 @@ function LandingCtrl($timeout, $location, $window, $rootScope, locationService) 
   var vm = this;
 
   vm.zip;
+  vm.show = true;
 
   vm.clearZip = function() {
     locationService.searchZip = "";
@@ -18,6 +19,10 @@ function LandingCtrl($timeout, $location, $window, $rootScope, locationService) 
   vm.assignSearchZip = function() {
     locationService.searchZip = vm.zip;
     $location.path('/nearby');
+  }
+
+  vm.toggleShow = function() {
+    vm.show = !vm.show;
   }
 
   vm.getLocation = function () {

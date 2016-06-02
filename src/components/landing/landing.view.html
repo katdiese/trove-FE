@@ -2,13 +2,31 @@
 
   <div class="row">
     <h1>Welcome to the Landing Page!</h1>
+  </div>
 
-    <button ng-click="vm.clearZip()">Closest to where you are right now</button>
+  <div class="row"
+       ng-show="vm.show">
+    <h4>Find Markets…</h4>
+    <button ng-click="vm.clearZip()">Close to Here</button>
+    <button ng-click="vm.toggleShow()">Near a Zip Code</button>
+  </div>
+  
+  <div class="row"
+       ng-hide="vm.show">
     <form>
       <h3>Find By Zipcode</h3>
-      <input ng-model="vm.zip" type="text">
-      <button ng-click ="vm.assignSearchZip()" type="submit">Search</button>
+      <input ng-model="vm.zip" 
+             type="text"
+             placeholder="ex: 80209">
+      <button ng-click ="vm.toggleShow()">Cancel</button>
+      <button ng-click ="vm.assignSearchZip()" 
+              type="submit">
+              Search</button>
     </form>
   </div>
 
 </div>
+
+
+    
+    
