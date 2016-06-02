@@ -24,11 +24,11 @@ angular
                 $window.alert('Success ' + resp.config.data.file.name + 'uploaded. Response: ');
             } else {
                 console.log(resp);
-                $window.alert('an error occured');
+//                 $window.alert('an error occured');
             }
         }, function (resp) { //catch error
             console.log('Error status: ' + resp.status);
-            $window.alert('Error status: ' + resp.status);
+//             $window.alert('Error status: ' + resp.status);
         }, function (evt) {
             console.log(evt);
             var progressPercentage = parseInt(100.0 * evt.loaded / evt.total);
