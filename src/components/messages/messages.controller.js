@@ -2,9 +2,9 @@ angular
   .module('troveApp')
   .controller('MessagesCtrl', MessagesCtrl);
 
-MessagesCtrl.$inject = ['$timeout', '$window', '$rootScope', '$scope', 'messageService', 'SocketService'];
+MessagesCtrl.$inject = ['$timeout', '$window', '$rootScope', '$scope', 'messageService', 'marketService', 'SocketService'];
 
-function MessagesCtrl($timeout, $window, $rootScope, $scope, messageService, SocketService) {
+function MessagesCtrl($timeout, $window, $rootScope, $scope, messageService, marketService, SocketService) {
   var vm = this;
 
   // Declare variables
@@ -27,7 +27,7 @@ function MessagesCtrl($timeout, $window, $rootScope, $scope, messageService, Soc
     .then( function(result) {
       // Save the messages and the categories returned from the API call
       vm.currMsgs = result.data.data;
-      vm.currCategories = messageService.categories;
+      vm.currCategories = marketService.categories;
     })
     
     .catch( function (error) { return error; })
