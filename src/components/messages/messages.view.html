@@ -12,6 +12,9 @@
       <ul>
         <li ng-repeat="message in vm.currMsgs | orderBy: dt">
           <p ng-class="{'vendor-message':message.vendor=true}">{{ message.msg }}</p>
+          <img ng-src="{{ message.img }}"
+               height="100"
+               ng-show="message.img.length > 0">
         </li>
       </ul>
     </div>
