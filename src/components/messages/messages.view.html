@@ -1,4 +1,9 @@
   <div class="single-conv">
+    <div class="desk-imgs row">
+      <ul>
+        <li ng-repeat="image in vm.marketImages"><img src="{{ image }}"></li>
+      </ul>
+    </div>
     <div class="single-mkt-categories">
       <div ng-show="vm.hideCategories" ng-click="vm.toggleFilter()" class="filter-button">Category Filters</div>
       <ul ng-show="!vm.hideCategories" class="curr-categories">
@@ -12,20 +17,17 @@
       <ul>
         <li ng-repeat="message in vm.currMsgs | orderBy: dt">
           <p ng-class="{'vendor-message':message.vendor=true}">{{ message.msg }}</p>
-          <img ng-src="{{ message.img }}"
-               height="100"
-               ng-show="message.img.length > 0">
         </li>
       </ul>
     </div>
     <div class="new-post">
       <h4>Submit A New…</h4>
-      
+
       <div class="row" ng-show="vm.postTypeButtons">
         <button ng-click="vm.hideButtons(); vm.showPostForm();">Post</button>
         <button ng-click="vm.hideButtons(); vm.showImageForm();">Photo</button>
       </div>
-      
+
       <div class="row"
            ng-show="vm.postForm">
         <h4>Submit this Post</h4>
@@ -42,15 +44,15 @@
           </div>
           <button ng-click="vm.showButtons()">Cancel</button>
           <button type="submit">Send</button>
-        </form>      
+        </form>
       </div>
-      
+
       <div class="row"
            ng-show="vm.imageForm">
         <h4>Submit this Image</h4>
         <button ng-click="vm.showButtons()">Cancel</button>
       </div>
-      
+
     </div>
   </div>
 

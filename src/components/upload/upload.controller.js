@@ -7,9 +7,9 @@ angular
   function MyCtrl(Upload,$window, $rootScope) {
 
     var vm = this;
-    
+
     vm.marketID = $rootScope.id || 2713;
-        
+
     vm.submit = function(){ //function to call on form submit
         if (vm.upload_form.file.$valid && vm.file) { //check if from is valid
             vm.upload(vm.file); //call upload function
@@ -18,7 +18,7 @@ angular
 
     vm.upload = function (file) {
         Upload.upload({
-            url: /* 'https://trove-api.herokuapp.com/v1/upload' */ 'http://localhost:5000/v1/upload', //webAPI exposed to upload the file
+            url: /* 'https://trove-api.herokuapp.com/v1/images' */ 'http://localhost:5000/v1/images', //webAPI exposed to upload the file
             data:{file:file,
                   marketID: vm.marketID
             } //pass file as data, should be user ng-model

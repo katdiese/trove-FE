@@ -110,6 +110,16 @@
   border: 1px solid black;
   overflow: scroll; }
 
+.desk-imgs {
+  overflow-x: scroll; }
+  .desk-imgs li {
+    list-style: none;
+    display: inline-block;
+    overflow-x: scroll; }
+    .desk-imgs li img {
+      height: 200px;
+      overflow-x: scroll; }
+
 html {
   position: relative;
   min-height: 100%; }
