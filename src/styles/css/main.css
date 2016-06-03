@@ -106,19 +106,17 @@
   padding: 10px 30px; }
 
 .mkt-messages {
-  height: 50vh;
+  height: 60vh;
   border: 1px solid black;
   overflow: scroll; }
 
 .desk-imgs {
-  overflow-x: scroll; }
+  height: 68vh;
+  overflow: scroll; }
   .desk-imgs li {
-    list-style: none;
-    display: inline-block;
-    overflow-x: scroll; }
-    .desk-imgs li img {
-      height: 200px;
-      overflow-x: scroll; }
+    list-style: none; }
+  .desk-imgs img {
+    width: 100%; }
 
 html {
   position: relative;

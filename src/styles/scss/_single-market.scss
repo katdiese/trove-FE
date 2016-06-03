@@ -9,20 +9,17 @@
   }
 }
 .mkt-messages {
-  height: 50vh;
+  height: 60vh;
   border: 1px solid black;
   overflow: scroll;
 }
 .desk-imgs {
-  overflow-x: scroll;
+  height: 68vh;
+  overflow: scroll;
   li {
     list-style: none;
-    display: inline-block;
-    overflow-x: scroll;
-
-    img {
-      height: 200px;
-      overflow-x: scroll;
-    }
+  }
+  img {
+    width: 100%;
   }
 }
