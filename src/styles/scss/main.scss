@@ -18,6 +18,19 @@ body {
   margin: 0 0 100px;
 }
 
+.center-text {
+  text-align: center;
+}
+
+.max-width-img {
+  width: 100%;
+}
+
+.bttn-center {
+  display: flex; 
+  justify-content: center;
+}
+
 .main-nav {
   height: 60px;
   background-color: $dark;

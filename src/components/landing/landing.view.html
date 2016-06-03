@@ -1,14 +1,29 @@
 <div class="container">
 
   <div class="row">
-    <h1>Welcome to the Landing Page!</h1>
+    <h1 class="center-text">Welcome to the Landing Page!</h1>
+  </div>
+  
+  <div class="row">
+    <img src="/images/market1.jpeg" 
+         class="max-width-img"
+         alt="Trove Hero Image">
   </div>
 
   <div class="row"
        ng-show="vm.show">
-    <h4>Find Markets…</h4>
-    <button ng-click="vm.clearZip()">Close to Here</button>
-    <button ng-click="vm.toggleShow()">Near a Zip Code</button>
+    <div class="six columns
+                bttn-center">
+    <button class="button-primary" 
+            ng-click="vm.clearZip()"
+            >Check Out Your Local Markets</button>
+    </div>
+    <div class="six columns
+                bttn-center">
+    <button class="button-primary" 
+            ng-click="vm.toggleShow()"
+            >Search For Markets By Zip Code</button>
+    </div>
   </div>
   
   <div class="row"
