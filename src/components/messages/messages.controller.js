@@ -79,13 +79,6 @@ function MessagesCtrl($timeout, $window, $rootScope, $scope, messageService, mar
     vm.imageForm = true;
   }
 
-  vm.marketImages = [ 'https://s3-us-west-2.amazonaws.com/troveimages/market1.jpeg',
-                 'https://s3-us-west-2.amazonaws.com/troveimages/market2.jpg',
-                 'https://s3-us-west-2.amazonaws.com/troveimages/market3.jpg',
-                 'https://s3-us-west-2.amazonaws.com/troveimages/market4.jpg',
-                 'https://s3-us-west-2.amazonaws.com/troveimages/market5.jpg',
-               ]
-
   // Invoke the function that gets the messages on page load
   vm.getMarketMessages();
 
