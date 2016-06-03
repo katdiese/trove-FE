@@ -25,6 +25,10 @@
     .when('/upload', {
       template: '<upload></upload>'
     })
+    
+    .when('/images', {
+      template: '<images></images>'
+    })
 
     .otherwise({redirectTo: '/'});
 
