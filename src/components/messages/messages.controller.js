@@ -20,7 +20,6 @@ function MessagesCtrl($timeout, $window, $rootScope, $scope, messageService, mar
 
   // Function to get Messages for this market
   vm.getMarketMessages = function() {
-
     // Use the message service to make the API call
     messageService.getMarketMessages($rootScope.id)
 
