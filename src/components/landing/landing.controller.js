@@ -27,6 +27,8 @@ function LandingCtrl($timeout, $location, $window, $rootScope, locationService) 
 
   vm.getLocation = function () {
     locationService.getLocation();
+    // Default value for testing
+    $rootScope.id = 2713;
   };
 
   vm.getLocation();
