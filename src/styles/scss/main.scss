@@ -1,5 +1,6 @@
-$dark: #9EBF6D;
-$offset: #BBE2BC;
+// $dark: #9EBF6D;
+$dark: #8CD211;
+$darken: darken($dark, 10%);
 $light: #BAD696;
 $highlight: #E4F1C3;
 $highlight2: #D8F1D3;
@@ -27,7 +28,7 @@ body {
 }
 
 .bttn-center {
-  display: flex; 
+  display: flex;
   justify-content: center;
 }
 

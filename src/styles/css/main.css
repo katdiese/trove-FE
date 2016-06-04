@@ -57,8 +57,11 @@
     text-align: center; }
     .all-markets .market-text .go-button button {
       margin-top: 15px;
-      background-color: green;
-      color: white; }
+      background-color: #6da30d;
+      color: white;
+      border: none; }
+      .all-markets .market-text .go-button button:hover {
+        background-color: #7cba0f; }
 
 .all-markets li:nth-of-type(5n+1) .market-image {
   background-image: url("/images/market1.jpeg"); }
@@ -137,7 +140,7 @@ body {
 
 .main-nav {
   height: 60px;
-  background-color: #9EBF6D;
+  background-color: #8CD211;
   color: white;
   margin-bottom: 75px; }
 

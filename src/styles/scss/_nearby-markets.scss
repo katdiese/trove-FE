@@ -31,10 +31,16 @@
 
     .go-button {
       text-align: center;
+
       button {
         margin-top: 15px;
-        background-color: green;
+        background-color: $darken;
         color: white;
+        border: none;
+
+        &:hover {
+          background-color: lighten($darken, 5%);
+        }
       }
     }
   }
