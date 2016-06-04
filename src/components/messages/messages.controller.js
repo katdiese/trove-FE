@@ -11,6 +11,8 @@ function MessagesCtrl($timeout, $window, $rootScope, $scope, messageService, mar
   vm.currMsgs;
   vm.message;
   vm.currCategories;
+  vm.filter;
+  vm.vendor;
 
   // Default value for hide categories.
   vm.hideCategories = true;
@@ -76,6 +78,14 @@ function MessagesCtrl($timeout, $window, $rootScope, $scope, messageService, mar
 
   vm.showImageForm = function() {
     vm.imageForm = true;
+  }
+
+  vm.vendorFilter = function() {
+    vm.vendor = true;
+  }
+
+  vm.clearVendorFilter = function() {
+    vm.vendor = "";
   }
 
   // Invoke the function that gets the messages on page load
