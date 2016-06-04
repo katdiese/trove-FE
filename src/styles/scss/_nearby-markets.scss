@@ -34,12 +34,12 @@
 
       button {
         margin-top: 15px;
-        background-color: $darken;
+        background-color: $green;
         color: white;
         border: none;
 
         &:hover {
-          background-color: lighten($darken, 5%);
+          background-color: lighten($green, 5%);
         }
       }
     }

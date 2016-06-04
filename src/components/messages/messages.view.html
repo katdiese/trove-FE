@@ -1,12 +1,4 @@
   <div class="single-conv">
-
-      <!-- <div ng-show="vm.hideCategories" ng-click="vm.toggleFilter()" class="filter-button">Category Filters</div> -->
-      <!-- <ul ng-show="!vm.hideCategories" class="curr-categories">
-        <button ng-click="vm.toggleFilter()">x</button>
-        <li><input type="checkbox"> Clear All</li>
-        <li><input type="checkbox"> Vendor Messages</li>
-        <li ng-repeat="category in vm.currCategories | orderBy: 'category'"><input type="checkbox"> {{ category.category }}</li>
-      </ul> -->
       {{ vm.filter }}
       <button ng-show="!vm.vendor" ng-click="vm.vendorFilter()">Show only Vendor Messages</button>
       <button ng-show="vm.vendor" ng-click="vm.clearVendorFilter()">Show all Market Messages</button>

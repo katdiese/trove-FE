@@ -1,11 +1,4 @@
-// $dark: #9EBF6D;
-$dark: #8CD211;
-$darken: darken($dark, 10%);
-$light: #BAD696;
-$highlight: #E4F1C3;
-$highlight2: #D8F1D3;
-$dark-grey: #696969;
-
+@import "colors";
 @import "home";
 @import "nearby-markets";
 @import "single-market";
@@ -34,9 +27,9 @@ body {
 
 .main-nav {
   height: 60px;
-  background-color: $dark;
+  background-color: $green;
   color: white;
-  margin-bottom: 75px;
+  margin-bottom: 30px;
 }
 .footer-nav {
   position: absolute;
