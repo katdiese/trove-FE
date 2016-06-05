@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Trove!</title>
+    <link rel="icon"
+          type="image/png"
+          href="images/fruit_logo.png">
 
     <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -13,22 +16,10 @@
 <!--     <base href="/"> -->
   </head>
   <body>
-
-    <nav class="main-nav">
-      <div class="container">
-        <a class="home-link" href="/#/">
-          <img src="images/fruit_logo.svg">
-          <p>Home</p>
-
-        </a>
-      </div>
-    </nav>
-
-    <div ng-view></div>
-
-    <nav class="footer-nav">
-      <a href="#">Vendor Login</a>
-    </nav>
+    <nav-about></nav-about>
+    <div class="views">
+      <div ng-view></div>
+    </div>
 
 
      <!-- Angular
@@ -71,11 +62,17 @@
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <script type="text/javascript" src="components/images/images.directive.js"></script>
       <script type="text/javascript" src="components/images/images.controller.js"></script>
-
       <!-- Individual Market Info Component
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <script type="text/javascript" src="components/ind-info/ind-info.directive.js"></script>
       <script type="text/javascript" src="components/ind-info/ind-info.controller.js"></script>
+      <!-- About Component
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <script type="text/javascript" src="components/nav-about/nav-about.directive.js"></script>
+      <script type="text/javascript" src="components/nav-about/nav-about.controller.js"></script>
+      <!-- Mobile Nav Component
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <script type="text/javascript" src="components/mobile-nav/mobile-nav.directive.js"></script>
 
 
     <!-- Services
