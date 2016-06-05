@@ -46,6 +46,10 @@
     margin: -50px 0 0 50px;
     font-weight: bold; }
 
+@media only screen and (max-width: 700px) {
+  .landing-logo {
+    width: 100%; } }
+
 .all-markets li {
   list-style: none; }
 
@@ -97,27 +101,45 @@
 .all-markets li:nth-of-type(5n+5) .market-image {
   background-image: url("/images/market5.jpg"); }
 
-@media (max-width: 700px) {
+@media only screen and (max-width: 700px) {
   .go-button {
     display: none; }
-  .mobile-buttons .buzz-button, .mobile-buttons .info-button {
+  .mobile-buttons .info-button a {
+    width: 100%;
+    border-top: 2px solid white;
+    display: block;
+    background-color: #1F363D; }
+    .mobile-buttons .info-button a:hover {
+      background-color: #28454e;
+      color: white; }
+  .mobile-buttons .buzz-button, .mobile-buttons .image-button {
     visibility: visible;
     width: 50%;
-    text-align: center; }
-    .mobile-buttons .buzz-button a, .mobile-buttons .info-button a {
-      color: white;
-      text-decoration: none; }
+    text-align: center;
+    border: 2px solid white; }
   .mobile-buttons .buzz-button {
-    background-color: green; }
+    background-color: #53A548;
+    border-left: none;
+    padding: 5px 0; }
     .mobile-buttons .buzz-button:hover {
-      background-color: #004d00;
-      cursor: pointer; }
-  .mobile-buttons .info-button {
+      background-color: #418139;
+      cursor: pointer;
+      color: white; }
+  .mobile-buttons .image-button {
     float: right;
-    background-color: blue; }
-    .mobile-buttons .info-button:hover {
-      background-color: #0000cc;
-      cursor: pointer; } }
+    border-right: none;
+    background-color: #40798C;
+    padding: 5px 0; }
+    .mobile-buttons .image-button:hover {
+      background-color: #305b69;
+      cursor: pointer;
+      color: white; }
+  .mobile-buttons a {
+    visibility: visible;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 5px 0; } }
 
 .filters {
   border: 1px solid #a8a8a8;
