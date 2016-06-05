@@ -26,7 +26,7 @@
 
 .landing-logo {
   width: 50%;
-  margin: 0 auto 30px;
+  margin: 0 auto 10vh;
   display: block; }
   .landing-logo img {
     width: 100%; }
@@ -46,9 +46,32 @@
     margin: -50px 0 0 50px;
     font-weight: bold; }
 
+.landing-video {
+  width: 100%;
+  margin-bottom: 20vh; }
+
+.landing-btns .landing-nav-btn {
+  display: block;
+  margin-bottom: 5vh;
+  background-color: #40798C;
+  border: none; }
+  .landing-btns .landing-nav-btn:hover {
+    border: none;
+    background-color: #48889e; }
+
 @media only screen and (max-width: 700px) {
   .landing-logo {
-    width: 100%; } }
+    width: 100%; }
+  .landing-video {
+    display: none; }
+  .landing-nav-btn {
+    width: 80%;
+    font-size: 2rem;
+    white-space: normal;
+    line-height: 120%;
+    padding: 10px;
+    display: block;
+    height: 100%; } }
 
 .all-markets li {
   list-style: none; }
