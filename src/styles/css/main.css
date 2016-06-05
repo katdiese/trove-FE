@@ -196,7 +196,8 @@
     margin-bottom: 0; }
   .mkt-messages .additional-info {
     font-size: 1.5rem;
-    font-weight: bold; }
+    font-weight: bold;
+    color: #696969; }
 
 .desk-imgs {
   height: 68vh;
