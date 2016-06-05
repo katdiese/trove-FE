@@ -1,4 +1,5 @@
 @import "colors";
+@import "buttons";
 @import "home";
 @import "nearby-markets";
 @import "single-market";
@@ -26,21 +27,17 @@ body {
 }
 
 .main-nav {
-  height: 60px;
+  height: 65px;
   background-color: $green;
   color: white;
   margin-bottom: 30px;
 }
 .footer-nav {
   position: absolute;
-  background-color: $dark-grey;
+  background-color: $navy;
   color: white;
   left: 0;
   bottom: 0;
   height: 100px;
   width: 100%;
-}
-
-.vendor-message {
-  color: red;
 }
