@@ -22,6 +22,20 @@
             >Search By Zip Code</button>
   </div>
 
+  <div class="four columns"
+       ng-hide="vm.show">
+    <form>
+      <h3>Find By Zipcode</h3>
+      <input ng-model="vm.zip"
+             type="text"
+             placeholder="ex: 80209">
+      <button class="green-button" ng-click ="vm.assignSearchZip()"
+              type="submit">
+              Search</button>
+      <button class="red-button" ng-click ="vm.toggleShow()">Cancel</button>
+    </form>
+  </div>
+
   <div class="seven columns">
     <video autoplay
            loop
@@ -29,20 +43,6 @@
       <source src="video/demo-vid.mov">
       Your browser does not support the video tag.
     </video>
-  </div>
-
-  <div class="row"
-       ng-hide="vm.show">
-    <form>
-      <h3>Find By Zipcode</h3>
-      <input ng-model="vm.zip"
-             type="text"
-             placeholder="ex: 80209">
-      <button ng-click ="vm.toggleShow()">Cancel</button>
-      <button ng-click ="vm.assignSearchZip()"
-              type="submit">
-              Search</button>
-    </form>
   </div>
 
 </div>
