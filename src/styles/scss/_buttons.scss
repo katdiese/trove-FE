@@ -1,0 +1,17 @@
+.green-button {
+  background-color: $green;
+  color: white;
+  border: none;
+  &:hover {
+    background-color: lighten($green, 5%);
+    color: white;
+  }
+}
+.red-button {
+  background-color: $red;
+  color: white;
+  &:hover {
+    background-color: darken($red, 10%);
+    color: white;
+  }
+}
