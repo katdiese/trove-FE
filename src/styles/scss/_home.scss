@@ -6,28 +6,10 @@
     width: 100%;
   }
 }
-.home-link {
-  text-decoration: none;
-  color: white;
-  &:hover {
-    color: white;
-  }
-  img, p {
-    padding: 5px 0;
-  }
-  img {
-    height: 50px;
-  }
-  p {
-    display: relative;
-    margin-bottom: 0;
-    margin: -50px 0 0 50px;
-    font-weight: bold;
-  }
-}
+
 .landing-video {
   width: 100%;
-  margin-bottom: 20vh;
+  margin-bottom: 5vh;
 }
 .landing-btns {
   .landing-nav-btn {
@@ -46,11 +28,15 @@
   .landing-logo {
     width: 100%;
   }
+  h3 {
+    text-align: center;
+  }
   .landing-video {
     display: none;
   }
   .landing-nav-btn {
     width: 80%;
+    margin: auto;
     font-size: 2rem;
     white-space: normal;
     line-height: 120%;

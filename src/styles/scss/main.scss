@@ -3,6 +3,7 @@
 @import "home";
 @import "nearby-markets";
 @import "single-market";
+@import "about";
 
 html {
   position: relative;
@@ -40,4 +41,23 @@ body {
   bottom: 0;
   height: 100px;
   width: 100%;
+}
+mobile-nav {
+  display: none;
+}
+.mobile-nav {
+  li {
+    text-decoration: none;
+  }
+  .mobile-nav-btn {
+    display: block;
+    width: 70%;
+    margin: 10px auto;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  mobile-nav {
+    display: block;
+  }
 }

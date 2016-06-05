@@ -24,6 +24,17 @@
     background: #28454e;
     color: white; }
 
+.blue-button {
+  letter-spacing: 0;
+  background: #40798C;
+  color: white;
+  text-transform: none;
+  margin: 7px;
+  font-size: 1.5rem; }
+  .blue-button:hover {
+    background: #305b69;
+    color: white; }
+
 .landing-logo {
   width: 50%;
   margin: 0 auto 10vh;
@@ -31,24 +42,9 @@
   .landing-logo img {
     width: 100%; }
 
-.home-link {
-  text-decoration: none;
-  color: white; }
-  .home-link:hover {
-    color: white; }
-  .home-link img, .home-link p {
-    padding: 5px 0; }
-  .home-link img {
-    height: 50px; }
-  .home-link p {
-    display: relative;
-    margin-bottom: 0;
-    margin: -50px 0 0 50px;
-    font-weight: bold; }
-
 .landing-video {
   width: 100%;
-  margin-bottom: 20vh; }
+  margin-bottom: 5vh; }
 
 .landing-btns .landing-nav-btn {
   display: block;
@@ -62,10 +58,13 @@
 @media only screen and (max-width: 700px) {
   .landing-logo {
     width: 100%; }
+  h3 {
+    text-align: center; }
   .landing-video {
     display: none; }
   .landing-nav-btn {
     width: 80%;
+    margin: auto;
     font-size: 2rem;
     white-space: normal;
     line-height: 120%;
@@ -227,6 +226,51 @@
   .market-title h5 {
     margin-bottom: 30px; }
 
+@media only screen and (max-width: 700px) {
+  .single-mkt-info {
+    text-align: center; }
+    .single-mkt-info li, .single-mkt-info p, .single-mkt-info .contact-title {
+      font-size: 2rem; } }
+
+.about {
+  position: absolute;
+  background-color: #696969;
+  overflow: auto;
+  width: 80%;
+  margin-left: 10%;
+  z-index: 1000;
+  color: white; }
+  .about h3, .about p {
+    padding: 0 3rem; }
+  .about h3 {
+    padding-top: 10px; }
+  .about button {
+    float: right;
+    color: white;
+    border: none;
+    font-size: 2.5rem;
+    padding-top: 10px; }
+
+.home-link, .about-link {
+  text-decoration: none;
+  color: white; }
+  .home-link:hover, .about-link:hover {
+    color: white;
+    cursor: pointer; }
+  .home-link img, .home-link p, .about-link img, .about-link p {
+    padding: 5px 0; }
+  .home-link img, .about-link img {
+    height: 50px; }
+  .home-link p, .about-link p {
+    display: relative;
+    font-weight: bold; }
+
+.home-link p {
+  margin: -50px 0 0 50px; }
+
+.about-link p {
+  margin: -33.5px 0 0 97px; }
+
 html {
   position: relative;
   min-height: 100%; }
@@ -258,3 +302,18 @@ body {
   bottom: 0;
   height: 100px;
   width: 100%; }
+
+mobile-nav {
+  display: none; }
+
+.mobile-nav li {
+  text-decoration: none; }
+
+.mobile-nav .mobile-nav-btn {
+  display: block;
+  width: 70%;
+  margin: 10px auto; }
+
+@media only screen and (max-width: 700px) {
+  mobile-nav {
+    display: block; } }
