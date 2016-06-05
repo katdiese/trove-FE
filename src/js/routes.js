@@ -34,6 +34,10 @@
       template: '<messages></messages>'
     })
 
+    .when('/market-info', {
+      template: '<ind-info></ind-info>'
+    })
+
     .otherwise({redirectTo: '/'});
 
 //     $locationProvider.html5Mode(true);
