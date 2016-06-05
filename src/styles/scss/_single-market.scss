@@ -1,5 +1,9 @@
-.single-info, .single-conv {
-  border: 1px solid black;
+.filters {
+  border: 1px solid $light-grey;
+  border-bottom: none;
+  select {
+    margin-left: 5px;
+  }
 }
 .curr-categories {
   li {
@@ -10,8 +14,34 @@
 }
 .mkt-messages {
   height: 60vh;
-  border: 1px solid black;
+  border: 1px solid $light-grey;
   overflow: scroll;
+  li {
+    font-size: 2rem;
+    list-style: none;
+    width: 90%;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  li:nth-child(even) {
+    border: 6px solid $green;
+  }
+  li:nth-child(odd) {
+    border: 6px solid lighten($dark-blue, 5%);
+  }
+  .vendor-message {
+  border: 6px dashed yellow;
+  padding: 10px;
+  }
+  .msg-text, .additional-info {
+    margin-bottom: 0;
+  }
+  .additional-info {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $dark-grey;
+  }
 }
 .desk-imgs {
   height: 68vh;
@@ -21,5 +51,38 @@
   }
   img {
     width: 100%;
+  }
+}
+.single-mkt-info {
+  li, p {
+    list-style: none;
+    word-wrap: break-word;
+    padding: 0 10px;
+  }
+  .contact-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: $black;
+    border-top: 1px solid $light-grey;
+    border-bottom: 1px solid $light-grey;
+    margin-left: 10px;
+  }
+}
+.market-title {
+  text-align: center;
+  h1 {
+    margin-bottom: 0;
+  }
+  h5 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .single-mkt-info {
+    text-align: center;
+    li,p, .contact-title {
+      font-size: 2rem;
+    }
   }
 }

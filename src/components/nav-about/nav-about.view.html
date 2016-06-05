@@ -1,0 +1,22 @@
+<nav class="main-nav">
+  <div class="container">
+    <a class="home-link" href="/#/">
+      <img src="images/fruit_logo.svg">
+      <p>Home</p>
+    </a>
+    <a class="about-link" ng-click="vm.showAbout()">
+      <p> | About</p>
+    </a>
+  </div>
+</nav>
+<div ng-show="vm.readAbout" class="about">
+  <button ng-click="vm.hideAbout()">x</button>
+  <h3>Thanks for checking out Trove! Great to have you here.</h3>
+  <p>Trove was created as a capstone project for Galvanize FullStack, graduating June 2016. The purpose of the app is to allow farmers' market goers to check out what is happening at farmers' markets near them or by zip code as well as allow vendors to advertise goods and deals, in real time.</p>
+  <p><strong>Technologies Used:</strong></p>
+  <p>Front End: Angular.js, Sass, Skeleton framework, socket.io, firebase deployment, Sketch3 (for wireframing)<br><a href="https://github.com/katdiese/trove-FE">Github Repo</a></p>
+  <p>Back End: PostgreSQL, knex.js, socket.io, AWS S3, farmers market dataset from Data.gov, heroku deployment<br><a href="https://github.com/dennisbailey/trove-api">Github Repo</a></p>
+  <p><strong>Project Contributors:</strong></p>
+  <p>Dennis Bailey:  <a href="https://www.linkedin.com/in/dennisabailey">LinkedIn</a> | <a href="https://github.com/dennisbailey">Github</a></p>
+  <p>Kathy Dieser:  <a href="https://www.linkedin.com/in/katdiese">LinkedIn</a> | <a href="https://github.com/katdiese">Github</a></p>
+</div>

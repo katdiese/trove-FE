@@ -1,51 +1,51 @@
 <div class="container">
 <!-- FOR TESTING -->
-<p>rootScope Default ID: {{ id }}<p>
+<!-- <p>rootScope Default ID: {{ id }}<p>
 <a href="/#/images"><button class="button-primary">Images Component</button></a>
-<a href="/#/messages"><button class="button-primary">Messages Component</button></a>
+<a href="/#/messages"><button class="button-primary">Messages Component</button></a> -->
 <!-- END TESTING -->
   <div class="row">
-    <h1 class="center-text">Welcome to the Landing Page!</h1>
-  </div>
-  
-  <div class="row">
-    <img src="/images/hero.jpg" 
-         class="max-width-img"
-         alt="Trove Hero Image">
+    <img class="landing-logo" src="images/trove_logo.svg">
   </div>
 
-  <div class="row"
+  <div class="landing-btns
+              four columns"
        ng-show="vm.show">
-    <div class="six columns
-                bttn-center">
-    <button class="button-primary" 
+    <h3>Get Started:</h3>
+    <button class="button-primary
+                  landing-nav-btn"
             ng-click="vm.clearZip()"
-            >Check Out Your Local Markets</button>
-    </div>
-    <div class="six columns
-                bttn-center">
-    <button class="button-primary" 
+            >Local Markets</button>
+    <button class="button-primary
+                  landing-nav-btn"
             ng-click="vm.toggleShow()"
-            >Search For Markets By Zip Code</button>
-    </div>
+            >Search By Zip Code</button>
   </div>
-  
-  <div class="row"
+
+  <div class="four columns"
        ng-hide="vm.show">
     <form>
       <h3>Find By Zipcode</h3>
-      <input ng-model="vm.zip" 
+      <input ng-model="vm.zip"
              type="text"
              placeholder="ex: 80209">
-      <button ng-click ="vm.toggleShow()">Cancel</button>
-      <button ng-click ="vm.assignSearchZip()" 
+      <button class="green-button" ng-click ="vm.assignSearchZip()"
               type="submit">
               Search</button>
+      <button class="red-button" ng-click ="vm.toggleShow()">Cancel</button>
     </form>
+  </div>
+
+  <div class="seven columns">
+    <video autoplay
+           loop
+           class="landing-video" >
+      <source src="video/demo-vid.mov">
+      Your browser does not support the video tag.
+    </video>
   </div>
 
 </div>
 
 
-    
-    
+

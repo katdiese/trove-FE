@@ -1,26 +1,24 @@
-  <div class="single-conv">
-
-      <!-- <div ng-show="vm.hideCategories" ng-click="vm.toggleFilter()" class="filter-button">Category Filters</div> -->
-      <!-- <ul ng-show="!vm.hideCategories" class="curr-categories">
-        <button ng-click="vm.toggleFilter()">x</button>
-        <li><input type="checkbox"> Clear All</li>
-        <li><input type="checkbox"> Vendor Messages</li>
-        <li ng-repeat="category in vm.currCategories | orderBy: 'category'"><input type="checkbox"> {{ category.category }}</li>
-      </ul> -->
-      {{ vm.filter }}
-      <button ng-show="!vm.vendor" ng-click="vm.vendorFilter()">Show only Vendor Messages</button>
-      <button ng-show="vm.vendor" ng-click="vm.clearVendorFilter()">Show all Market Messages</button>
+<mobile-nav></mobile-nav>
+  <div class="filters">
       <select ng-model="vm.filter">
         <option value="">Filter Messages By Category</option>
         <option value="">Show All</option>
         <option ng-repeat="category in vm.currCategories | orderBy: 'category'" value="{{ category.category }}">{{ category.category }}</option>
       </select>
+      <button class="navy-button" ng-show="!vm.vendor" ng-click="vm.vendorFilter()">Show only Vendor Messages</button>
+      <button class="navy-button" ng-show="vm.vendor" ng-click="vm.clearVendorFilter()">Show all Market Messages</button>
     </div>
     <div class="mkt-messages">
       <ul>
         <li ng-repeat="message in vm.currMsgs | filter: { category: vm.filter, vendor: vm.vendor } | orderBy: dt">
-          <p ng-class="{'vendor-message':message.vendor}">{{ message.msg }}</p>
-          <p>{{ message.category }}</p>
+          <div ng-class="{'vendor-message':message.vendor}">
+            <p class="additional-info">{{ message.dt | date : 'medium' }}</p>
+            <p class="msg-text">{{ message.msg }}</p>
+            <p class="additional-info">
+              #{{message.category}}<span ng-show="!message.category">General</span>
+              <span ng-show="message.vendor">, #Vendor Message</span>
+            </p>
+            </div>
         </li>
       </ul>
     </div>
@@ -36,10 +34,10 @@
           </div>
           <div class="row">
             <label for="message">Message</label>
-            <textarea id="message" ng-model="vm.message.msg" class="u-full-width"></textarea>
+            <textarea id="message" ng-model="vm.message.msg" max-length="255" class="u-full-width"></textarea>
           </div>
-          <button ng-click="vm.showButtons()">Cancel</button>
-          <button type="submit">Send</button>
+          <button class="red-button" ng-click="vm.showButtons()">Cancel</button>
+          <button class="green-button" type="submit">Send</button>
         </form>
       </div>
 

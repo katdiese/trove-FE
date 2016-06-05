@@ -34,12 +34,12 @@
 
       button {
         margin-top: 15px;
-        background-color: $darken;
+        background-color: $green;
         color: white;
         border: none;
 
         &:hover {
-          background-color: lighten($darken, 5%);
+          background-color: lighten($green, 5%);
         }
       }
     }
@@ -62,34 +62,58 @@
 
 }
 
-@media(max-width: 700px) {
+@media only screen and (max-width: 700px) {
   .go-button {
     display: none;
   }
+
   .mobile-buttons {
-    .buzz-button, .info-button {
+    .info-button {
+      a {
+        width: 100%;
+        border-top: 2px solid white;
+        display: block;
+        background-color: $navy;
+
+        &:hover {
+          background-color: lighten($navy, 5%);
+          color: white;
+        }
+      }
+    }
+    .buzz-button, .image-button {
       visibility: visible;
       width: 50%;
       text-align: center;
-      a {
-        color: white;
-        text-decoration: none;
-      }
+      border: 2px solid white;
     }
     .buzz-button {
-      background-color: green;
+      background-color: $green;
+      border-left: none;
+      padding: 5px 0;
       &:hover {
-        background-color: darken(green, 10%);
+        background-color: darken($green, 10%);
         cursor: pointer;
+        color: white;
       }
     }
-    .info-button {
+    .image-button {
       float: right;
-      background-color: blue;
+      border-right: none;
+      background-color: $dark-blue;
+      padding: 5px 0;
       &:hover {
-        background-color: darken(blue, 10%);
+        background-color: darken($dark-blue, 10%);
         cursor: pointer;
+        color: white;
       }
+    }
+    a {
+      visibility: visible;
+      text-align: center;
+      color: white;
+      text-decoration: none;
+      padding: 5px 0;
     }
   }
 }

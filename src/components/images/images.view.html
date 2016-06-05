@@ -1,3 +1,4 @@
+<mobile-nav></mobile-nav>
 <div class="desk-imgs row">
   <ul>
     <li ng-repeat="images in vm.marketImages"><img src="{{ images.img }}"></li>
@@ -20,7 +21,7 @@
     <i ng-show="vm.upload_form.file.$error.required">*required</i><br>
     <i ng-show="vm.upload_form.file.$error.maxSize">File too large
     {{vm.file.size / 1000000|number:1}}MB: max 20M</i>
-    <button type="submit" ng-click="vm.submit()">submit</button>
+    <button class="green-button" type="submit" ng-click="vm.submit()">submit</button>
     <p>{{vm.progress}}</p>
   </form>
 </div>
