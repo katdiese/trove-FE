@@ -3,7 +3,7 @@
 @import "home";
 @import "nearby-markets";
 @import "single-market";
-@import "about";
+@import "about-nav";
 
 html {
   position: relative;
@@ -25,22 +25,6 @@ body {
 .bttn-center {
   display: flex;
   justify-content: center;
-}
-
-.main-nav {
-  height: 65px;
-  background-color: $green;
-  color: white;
-  margin-bottom: 30px;
-}
-.footer-nav {
-  position: absolute;
-  background-color: $navy;
-  color: white;
-  left: 0;
-  bottom: 0;
-  height: 100px;
-  width: 100%;
 }
 mobile-nav {
   display: none;
