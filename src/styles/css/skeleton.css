@@ -36,13 +36,11 @@
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
-@media only screen and (max-device-width: 700px){
 .column,
 .columns {
   width: 100%;
   float: left;
   box-sizing: border-box; }
-}
 }
 
 
