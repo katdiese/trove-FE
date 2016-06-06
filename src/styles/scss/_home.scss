@@ -1,10 +1,5 @@
 .landing-logo {
-  width: 50%;
-  margin: 0 auto 10vh;
-  display: block;
-  img {
-    width: 100%;
-  }
+  display: none;
 }
 
 .landing-video {
@@ -12,8 +7,12 @@
   margin-bottom: 5vh;
 }
 .landing-btns {
+  text-align: center;
+  margin: auto;
+  border-bottom: 1px solid $light-grey;
+  margin-bottom: 30px;
   .landing-nav-btn {
-    display: block;
+    margin: 0 20px;
     margin-bottom: 5vh;
     background-color: $dark-blue;
     border: none;
@@ -23,10 +22,15 @@
     }
   }
 }
+.zip-search-btn {
+  text-align: center;
+  margin: auto;
+}
 
 @media only screen and (max-width: 700px) {
   .landing-logo {
     width: 100%;
+    display: block;
   }
   h3 {
     text-align: center;
@@ -43,5 +47,8 @@
     padding: 10px;
     display: block;
     height: 100%;
+  }
+  .landing-btns {
+    border: none;
   }
 }
