@@ -29,6 +29,7 @@ function MessagesCtrl($timeout, $window, $rootScope, $scope, messageService, mar
       // Save the messages and the categories returned from the API call
       vm.currMsgs = result.data.data;
       vm.currCategories = marketService.categories;
+      console.log('categories!!', marketService.categories);
     })
 
     .catch( function (error) { return error; })
