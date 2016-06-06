@@ -5,6 +5,7 @@
     <li ng-show="vm.currInfo.county">{{ vm.currInfo.county }} County</li>
     <li ng-show="vm.currInfo.street">{{ vm.currInfo.street }}</li>
     <li>{{ vm.currInfo.city }}, {{ vm.currInfo.state }} {{ vm.currInfo.zip }}</li>
+    <li><a target="_blank" href="http://maps.google.com/maps?q={{vm.currInfo.lat}},{{vm.currInfo.lng}}">Map</a></li>
     <li ng-show="vm.currInfo.season_dt" class="contact-title">Season</li>
     <li ng-show="vm.currInfo.season_dt" >{{ vm.currInfo.season_dt }}</li>
     <li ng-show="vm.currInfo.season_time" class="contact-title">Schedule</li>
