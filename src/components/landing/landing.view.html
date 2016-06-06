@@ -1,16 +1,11 @@
 <div class="container">
-<!-- FOR TESTING -->
-<!-- <p>rootScope Default ID: {{ id }}<p>
-<a href="/#/images"><button class="button-primary">Images Component</button></a>
-<a href="/#/messages"><button class="button-primary">Messages Component</button></a> -->
-<!-- END TESTING -->
   <div class="row">
     <img class="landing-logo" src="images/trove_logo.svg">
   </div>
 
   <div class="landing-btns"
        ng-show="vm.show">
-    <h3>Find Farmers' Market Treasure:</h3>
+    <h1>Find Farmers' Market Treasure:</h1>
     <button class="button-primary
                   landing-nav-btn"
             ng-click="vm.clearZip()"
@@ -35,26 +30,23 @@
   </div>
 
   <div class="u-full-width">
-    <video autoplay
-           loop
-           class="landing-video" >
-      <source src="video/demo-vid.mov">
-      Your browser does not support the video tag.
-    </video>
+    <img class="landing-video" src="images/farmers_market.jpg">
   </div>
   <div class="row">
     <h1 class="center-text">What is Trove?</h1>
-    <p>Trove is a discovery and communication tool for farmers market patrons and vendors.  Whether you’re at home planning your day, or you’re wandering through your favorite Farmer’s Market, Trove is there for you.</p>
+    <div class="ten offset-by-one columns">
+      <p class="trove-intro">Trove is a discovery and communication tool for farmers market patrons and vendors.  Whether you’re at home planning your day, or you’re wandering through your favorite Farmer’s Market, Trove is there for you.</p>
+    </div>
   </div>
 
    <div class="row">
-    <div class="six columns">
+    <div class="five offset-by-one columns">
       <h3 class="center-text">Discovery</h3>
-      <p>Looking for a new farmers market? Need info on an old standby? Trove is the tool for you. With information on farmers markets all across the United States there’s a treasure trove of information and possibility out there.</p>
+      <p class="trove-intro">Looking for a new farmers market? Need info on an old standby? Trove is the tool for you. With information on farmers markets all across the United States there’s a treasure trove of information and possibility out there.</p>
     </div>
-    <div class="six columns">
+    <div class="five columns">
       <h3 class="center-text">Communication</h3>
-      <p>With realtime chat and user images you’ll always know what’s going on. Patrons can ask questions and share their finds. Vendors can answer questions and post deals to strengthen their connection with their customers.</p>
+      <p class="trove-intro">With realtime chat and user images you’ll always know what’s going on. Patrons can ask questions and share their finds. Vendors can answer questions and post deals to strengthen their connection with their customers.</p>
     </div>
   </div>
 
