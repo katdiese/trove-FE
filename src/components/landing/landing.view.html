@@ -8,10 +8,9 @@
     <img class="landing-logo" src="images/trove_logo.svg">
   </div>
 
-  <div class="landing-btns
-              four columns"
+  <div class="landing-btns"
        ng-show="vm.show">
-    <h3>Get Started:</h3>
+    <h3>Find Farmers' Market Treasure:</h3>
     <button class="button-primary
                   landing-nav-btn"
             ng-click="vm.clearZip()"
@@ -22,8 +21,7 @@
             >Search By Zip Code</button>
   </div>
 
-  <div class="four columns"
-       ng-hide="vm.show">
+  <div class="zip-search-btn" ng-hide="vm.show">
     <form>
       <h3>Find By Zipcode</h3>
       <input ng-model="vm.zip"
@@ -36,7 +34,7 @@
     </form>
   </div>
 
-  <div class="seven columns">
+  <div class="u-full-width">
     <video autoplay
            loop
            class="landing-video" >
