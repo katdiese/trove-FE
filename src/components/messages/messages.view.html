@@ -11,8 +11,8 @@
     <div class="mkt-messages">
       <ul>
         <li ng-repeat="message in vm.currMsgs | filter: { category: vm.filter, vendor: vm.vendor } | orderBy: dt">
-          <div ng-class="{'vendor-message':message.vendor}">
-            <p class="additional-info">{{ message.dt | date : 'medium' }}</p>
+          <div class="each-message" ng-class="{'vendor-message':message.vendor}">
+            <p class="additional-info">{{ message.dt | date : 'short' }}</p>
             <p class="msg-text">{{ message.msg }}</p>
             <p class="additional-info">
               #{{message.category}}<span ng-show="!message.category">General</span>
