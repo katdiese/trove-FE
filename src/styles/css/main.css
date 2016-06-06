@@ -239,7 +239,12 @@
   .single-mkt-info {
     text-align: center; }
     .single-mkt-info li, .single-mkt-info p, .single-mkt-info .contact-title {
-      font-size: 2rem; } }
+      font-size: 2rem; }
+  .filters {
+    position: relative;
+    margin-top: -30px;
+    text-align: center;
+    margin: -30px auto 0 auto; } }
 
 .about {
   position: absolute;
@@ -300,6 +305,24 @@
   .about-link p {
     margin: -33.5px 0 0 97px; } }
 
+mobile-nav {
+  display: none; }
+
+.secondary-mobile-nav {
+  text-align: center;
+  position: relative;
+  margin: -30px 0 30px 0;
+  background-color: #40798C; }
+  .secondary-mobile-nav a {
+    padding: 10px;
+    font-size: 1.75rem;
+    color: white;
+    text-decoration: none; }
+
+@media only screen and (max-width: 700px) {
+  mobile-nav {
+    display: block; } }
+
 html {
   position: relative;
   min-height: 100%; }
@@ -316,18 +339,3 @@ body {
 .bttn-center {
   display: flex;
   justify-content: center; }
-
-mobile-nav {
-  display: none; }
-
-.mobile-nav li {
-  text-decoration: none; }
-
-.mobile-nav .mobile-nav-btn {
-  display: block;
-  width: 70%;
-  margin: 10px auto; }
-
-@media only screen and (max-width: 700px) {
-  mobile-nav {
-    display: block; } }
