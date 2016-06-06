@@ -21,7 +21,6 @@
     list-style: none;
     width: 90%;
     margin: 10px auto;
-    padding: 15px;
     border-radius: 5px;
   }
   li:nth-child(even) {
@@ -30,9 +29,13 @@
   li:nth-child(odd) {
     border: 6px solid lighten($dark-blue, 5%);
   }
+  .each-message {
+    padding: 10px;
+  }
   .vendor-message {
-  border: 6px dashed yellow;
-  padding: 10px;
+  // border: 8px solid $light-blue;
+  background-color: $light-yellow;
+  // padding: 10px;
   }
   .msg-text, .additional-info {
     margin-bottom: 0;
