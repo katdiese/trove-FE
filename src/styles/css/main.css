@@ -185,6 +185,7 @@
   padding: 10px 30px; }
 
 .mkt-messages {
+  margin-right: 10px;
   height: 60vh;
   border: 1px solid #a8a8a8;
   overflow: scroll; }
@@ -237,11 +238,18 @@
   .market-title h5 {
     margin-bottom: 30px; }
 
+.new-post-mobile {
+  display: none; }
+
 @media only screen and (max-width: 700px) {
   .single-mkt-info {
     text-align: center; }
     .single-mkt-info li, .single-mkt-info p, .single-mkt-info .contact-title {
       font-size: 2rem; }
+  .new-post-mobile {
+    display: block; }
+  .new-post-desktop {
+    display: none; }
   .filters {
     position: relative;
     margin-top: -30px;
