@@ -20,6 +20,24 @@
     padding-top: 10px;
   }
 }
+
+.main-links {
+  img {
+    height: 50px;
+  }
+  a {
+    float: left;
+    img {
+      margin-top: 5px;
+    }
+    p {
+      position: relative;
+      padding: 20px 15px;
+    }
+  }
+}
+
+
 .home-link, .about-link {
   text-decoration: none;
   color: white;
@@ -30,22 +48,10 @@
   img, p {
     padding: 5px 0;
   }
-  img {
-    height: 50px;
-  }
+
   p {
     display: relative;
     font-weight: bold;
-  }
-}
-.home-link {
-  p {
-    margin: -50px 0 0 112px;
-  }
-}
-.about-link {
-  p {
-    margin: -33.5px 0 0 160px;
   }
 }
 
@@ -71,14 +77,4 @@
       display: block;
     }
   }
-  .home-link {
-    p {
-      margin: -50px 0 0 50px;
-    }
-  }
-  .about-link {
-    p {
-      margin: -33.5px 0 0 97px;
-    }
-}
 }

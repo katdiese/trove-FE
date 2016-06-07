@@ -47,7 +47,6 @@
   margin: auto;
   margin-bottom: 30px; }
   .landing-btns .landing-nav-btn {
-    margin: 0 20px;
     margin-bottom: 5vh;
     background-color: #40798C;
     border: none; }
@@ -275,6 +274,17 @@
     font-size: 2.5rem;
     padding-top: 10px; }
 
+.main-links img {
+  height: 50px; }
+
+.main-links a {
+  float: left; }
+  .main-links a img {
+    margin-top: 5px; }
+  .main-links a p {
+    position: relative;
+    padding: 20px 15px; }
+
 .home-link, .about-link {
   text-decoration: none;
   color: white; }
@@ -283,17 +293,9 @@
     cursor: pointer; }
   .home-link img, .home-link p, .about-link img, .about-link p {
     padding: 5px 0; }
-  .home-link img, .about-link img {
-    height: 50px; }
   .home-link p, .about-link p {
     display: relative;
     font-weight: bold; }
-
-.home-link p {
-  margin: -50px 0 0 112px; }
-
-.about-link p {
-  margin: -33.5px 0 0 160px; }
 
 .main-nav {
   height: 65px;
@@ -309,11 +311,7 @@
   .main-nav .desktop-logo {
     display: none; }
   .main-nav .mobile-logo {
-    display: block; }
-  .home-link p {
-    margin: -50px 0 0 50px; }
-  .about-link p {
-    margin: -33.5px 0 0 97px; } }
+    display: block; } }
 
 mobile-nav {
   display: none; }
