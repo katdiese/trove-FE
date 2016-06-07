@@ -40,6 +40,7 @@ function MessagesCtrl($timeout, $window, $rootScope, $scope, messageService, mar
   vm.postMessage = function() {
     // Add the market id to the message object
     vm.message.market_id = $rootScope.id;
+    vm.message.vendor = false;
 
     // Use the message service to make the API call
     messageService.postMessage($rootScope.id, vm.message)
