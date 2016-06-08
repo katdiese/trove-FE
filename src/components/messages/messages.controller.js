@@ -28,12 +28,23 @@ function MessagesCtrl($timeout, $window, $rootScope, $scope, messageService, mar
     .then( function(result) {
       // Save the messages and the categories returned from the API call
       vm.currMsgs = result.data.data;
-      vm.currCategories = marketService.categories;
-      console.log('categories!!', marketService.categories);
+
     })
 
     .catch( function (error) { return error; })
 
+  }
+
+  vm.getCategories = function() {
+    marketService.getMarketInfo($rootScope.id, $rootScope.fmid)
+    .then( function (result) {
+      vm.currCategories = result.data.categories;
+      marketService.categories = vm.currCategories;
+      return result;
+    })
+    .catch( function (error) {
+      return error;
+    });
   }
 
   // Post messages to the database
@@ -90,7 +101,8 @@ function MessagesCtrl($timeout, $window, $rootScope, $scope, messageService, mar
     vm.vendor = "";
   }
 
-  // Invoke the function that gets the messages on page load
+  // Invoke the function that gets the messages & categories on page load
   vm.getMarketMessages();
+  vm.getCategories();
 
 }

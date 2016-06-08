@@ -2,9 +2,6 @@
 
   <div class="row">
     <h1 class="near-header">Near You:</h1>
-<!--     <h4>Lat: {{lat}}</h4>
-    <h4>Lng: {{lng}}</h4> -->
-
       <ul class="all-markets-list">
         <li ng-repeat="market in vm.nearbyMarkets | orderBy: 'distance'">
           <div class="six columns">
@@ -17,18 +14,16 @@
                   <a href="/#/info" ng-click="vm.setId(market.id, market.fmid)"><button>Go</button></a>
                 </div>
               </div>
-              <!-- <div class="row"> -->
-                <div class="mobile-buttons">
-                  <div class="info-button">
-                    <a href="/#/market-info" ng-click="vm.setId(market.id, market.fmid)" class="mobile-nav">Info</a>
-                  </div>
-                  <div class="image-button">
-                    <a href="/#/images" ng-click="vm.setId(market.id, market.fmid)" class="mobile-nav">Images</a>
-                  </div>
-                  <div class="buzz-button">
-                    <a href="/#/messages" ng-click="vm.setId(market.id, market.fmid)" class="mobile-nav">Buzz</a>
-                  </div>
-                <!-- </div> -->
+              <div class="mobile-buttons">
+                <div class="info-button">
+                  <a href="/#/market-info" ng-click="vm.setId(market.id, market.fmid)" class="mobile-nav">Info</a>
+                </div>
+                <div class="image-button">
+                  <a href="/#/images" ng-click="vm.setId(market.id, market.fmid)" class="mobile-nav">Images</a>
+                </div>
+                <div class="buzz-button">
+                  <a href="/#/messages" ng-click="vm.setId(market.id, market.fmid)" class="mobile-nav">Buzz</a>
+                </div>
               </div>
             </div>
 
