@@ -176,7 +176,10 @@
   border: 1px solid #a8a8a8;
   border-bottom: none; }
   .filters select {
-    margin-left: 5px; }
+    margin-left: 5px;
+    width: 47%; }
+  .filters button {
+    width: 47%; }
 
 .curr-categories li {
   display: inline-block;
@@ -184,7 +187,6 @@
   padding: 10px 30px; }
 
 .mkt-messages {
-  margin-right: 10px;
   height: 60vh;
   border: 1px solid #a8a8a8;
   overflow: scroll; }
@@ -239,6 +241,10 @@
 
 .new-post-mobile {
   display: none; }
+
+.images-row {
+  margin-left: 2%;
+  padding-right: 2%; }
 
 @media only screen and (max-width: 700px) {
   .single-mkt-info {
