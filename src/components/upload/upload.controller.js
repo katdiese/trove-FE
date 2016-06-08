@@ -24,12 +24,10 @@ angular
             } //pass file as data, should be user ng-model
         })
         .then(function (resp) { //upload function returns a promise
-            console.log(resp)
             if(resp.data.error_code === 0){ //validate success
                 $window.alert('Success ' + resp.config.data.file.name + 'uploaded. Response: ');
             } else {
                 console.log(resp);
-//                 $window.alert('an error occured');
             }
         }, function (resp) { //catch error
 //             console.log('Error status: ' + resp.status);

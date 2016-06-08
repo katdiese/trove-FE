@@ -30,12 +30,14 @@
   }
   a {
     float: left;
+    padding-right: 15px;
     img {
       margin-top: 5px;
     }
     p {
       position: relative;
-      padding: 20px 15px;
+      padding-top: 20px;
+      margin-bottom: 0;
     }
   }
 }

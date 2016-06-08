@@ -13,7 +13,6 @@ function ImagesCtrl($timeout, $window, $rootScope, $scope, marketService, Upload
 
   // Function to get Messages for this market
   vm.getMarketImages = function() {
-    console.log("getting market images");
 
     marketService.getMarketImages($rootScope.id)
 
@@ -26,9 +25,7 @@ function ImagesCtrl($timeout, $window, $rootScope, $scope, marketService, Upload
   // Sockets!
   SocketService.forward('image.new', $scope);
     $scope.$on('socket:image.new', function (ev, result) {
-      console.log("socket fired", result);
-      console.log('root id', $rootScope.id);
-      if (result == $rootScope.id) { console.log("match");vm.getMarketImages(); }
+      if (result == $rootScope.id) { vm.getMarketImages(); }
     });
 
   //stuff from uploads controller
@@ -48,20 +45,14 @@ function ImagesCtrl($timeout, $window, $rootScope, $scope, marketService, Upload
             } //pass file as data, should be user ng-model
         })
         .then(function (resp) { //upload function returns a promise
-            console.log(resp)
             if(resp.data.error_code === 0){ //validate success
                 $window.alert('Success ' + resp.config.data.file.name + 'uploaded. Response: ');
             } else {
                 console.log(resp);
-//                 $window.alert('an error occured');
             }
         }, function (resp) { //catch error
-//             console.log('Error status: ' + resp.status);
-//             $window.alert('Error status: ' + resp.status);
         }, function (evt) {
-            console.log(evt);
             var progressPercentage = parseInt(100.0 * evt.loaded / evt.total);
-            console.log('progress: ' + progressPercentage + '% ' + evt.config.data.file.name);
             vm.progress = 'progress: ' + progressPercentage + '% '; // capture upload progress
         });
     };

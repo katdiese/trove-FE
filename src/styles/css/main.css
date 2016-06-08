@@ -259,7 +259,10 @@
     position: relative;
     margin-top: -30px;
     text-align: center;
-    margin: -30px auto 0 auto; } }
+    margin: -30px auto 0 auto; }
+  .filters select, .filters button {
+    width: 100%;
+    margin-left: 0; } }
 
 .about {
   position: absolute;
@@ -286,12 +289,14 @@
   height: 50px; }
 
 .main-links a {
-  float: left; }
+  float: left;
+  padding-right: 15px; }
   .main-links a img {
     margin-top: 5px; }
   .main-links a p {
     position: relative;
-    padding: 20px 15px; }
+    padding-top: 20px;
+    margin-bottom: 0; }
 
 .home-link, .about-link {
   text-decoration: none;
